@@ -1,0 +1,108 @@
+ <!-- Landing
+🔍 Investigar la etiqueta address
+Crear la estructura HTML de una página personal (sin estilos) usando etiquetas semánticas:
+
+Un encabezado que tengan links de navegación:
+Sobre mí
+Mis Proyectos
+Contactame
+Una sección "Sobre mí" que tenga:
+Nombre
+Párrafo con breve descripción
+Una sección "Mis proyectos" que tenga:
+Título que diga "Mis proyectos"
+4 cards de proyectos con: imagen, título y descripción.
+Una sección "Contacto" que tenga
+Título que diga "Contactame"
+Datos de contacto que incluyan: email, telefono y página de linkedin (los datos no tienen que ser reales).
+Un pie de página que diga:
+Hecho con ❤️
+
+⚠️ Consideraciones:
+
+Analizar qué etiquetas semánticas corresponden en cada caso y cómo debería ser la estructura HTML (la descripción del ejercicio no indica cuál es exactamente).
+Se puede usar lorem ipsum para rellenar los textos.
+Las imágenes puede ser aleatorias (no tienen que estar relacionadas).
+Las imágenes pueden ser con ruta relativa o absoluta.
+Los links de navegación tienen que llegar a las respectivas secciones al ser clickeados.
+Poner clases a todos los elementos. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Personal</title>
+</head>
+<body>
+
+  <!-- Encabezado principal con navegación -->
+  <header class="header">
+    <nav class="navegacion">
+      <ul class="nav-lista">
+        <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li class="nav-item"><a href="#proyectos" class="nav-link">Mis Proyectos</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contáctame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección "Sobre mí" -->
+  <section id="sobre-mi" class="seccion-sobre-mi">
+    <h1 class="nombre">Manuela Cantillo</h1>
+    <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dui non neque suscipit dignissim.</p>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos" class="seccion-proyectos">
+    <h2 class="titulo-proyectos">Mis proyectos</h2>
+
+    <!-- Card 1 -->
+    <article class="proyecto-card">
+      <img src="https://via.placeholder.com/200" alt="Proyecto 1" class="proyecto-imagen">
+      <h3 class="proyecto-titulo">Proyecto Uno</h3>
+      <p class="proyecto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="proyecto-card">
+      <img src="https://via.placeholder.com/200" alt="Proyecto 2" class="proyecto-imagen">
+      <h3 class="proyecto-titulo">Proyecto Dos</h3>
+      <p class="proyecto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="proyecto-card">
+      <img src="https://via.placeholder.com/200" alt="Proyecto 3" class="proyecto-imagen">
+      <h3 class="proyecto-titulo">Proyecto Tres</h3>
+      <p class="proyecto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="proyecto-card">
+      <img src="https://via.placeholder.com/200" alt="Proyecto 4" class="proyecto-imagen">
+      <h3 class="proyecto-titulo">Proyecto Cuatro</h3>
+      <p class="proyecto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="seccion-contacto">
+    <h2 class="titulo-contacto">Contáctame</h2>
+
+    <!-- Información de contacto usando la etiqueta address -->
+    <address class="contacto-info">
+      <p class="email">📧 Email: manuela@example.com</p>
+      <p class="telefono">📞 Teléfono: +57 300 000 0000</p>
+      <p class="linkedin">🔗 LinkedIn: <a href="https://linkedin.com/in/manuela" target="_blank">linkedin.com/in/manuela</a></p>
+    </address>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p class="footer-texto">Hecho con ❤️</p>
+  </footer>
+
+</body>
+</html>
+

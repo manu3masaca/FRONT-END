@@ -1,0 +1,109 @@
+<!-- Eventos próximos
+Crear la estructura HTML de un artículo (sin estilos) usando etiquetas semánticas:
+
+Dentro del body, poner una etiqueta main.
+Dentro de main, poner una etiqueta h1 con el texto "Eventos relacionados a Programación"
+Debajo del h1 poner 2 párrafos con lorem ipsum.
+Debajo de los 2 párrafos, poner una section.
+Dentro de la section, poner un h2 que diga Hoy.
+Debajo de h2, crear 4 eventos.
+Cada evento es un article.
+Tiene que contener un h3 que contenga el nombre del evento.
+Debajo del h3, tiene que contener una etiqueta p con lorem ipsum.
+Tiene que contener un footer con un elemento span que diga, por ejemplo, Por Ada Lovelace
+Debajo de la section, poner otra section con 2 eventos y el título Mañana
+
+⚠️ Consideraciones:
+
+Poner clases a todos los elementos.
+Se puede usar lorem ipsum para todos los texto que se necesiten. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos relacionados a Programación</title>
+</head>
+<body class="body">
+
+  <!-- Contenido principal -->
+  <main class="main">
+
+    <!-- Título principal -->
+    <h1 class="titulo-principal">Eventos relacionados a Programación</h1>
+
+    <!-- Primer párrafo introductorio -->
+    <p class="parrafo-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel urna at erat posuere fermentum.</p>
+
+    <!-- Segundo párrafo introductorio -->
+    <p class="parrafo-intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+    <!-- Sección de eventos de hoy -->
+    <section class="seccion-hoy">
+      <h2 class="subtitulo-hoy">Hoy</h2>
+
+      <!-- Evento 1 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Conferencia de JavaScript Moderno</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+
+      <!-- Evento 2 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Introducción a Python para Principiantes</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+
+      <!-- Evento 3 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Taller de Git y GitHub</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+
+      <!-- Evento 4 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Desarrollo Web con HTML5 y CSS3</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+    </section>
+
+    <!-- Sección de eventos de mañana -->
+    <section class="seccion-manana">
+      <h2 class="subtitulo-manana">Mañana</h2>
+
+      <!-- Evento 1 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Machine Learning con Python</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+
+      <!-- Evento 2 -->
+      <article class="evento">
+        <h3 class="titulo-evento">Diseño UX/UI en Proyectos Web</h3>
+        <p class="descripcion-evento">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <footer class="footer-evento">
+          <span class="autor-evento">Por Ada Lovelace</span>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+  
+</body>
+</html>
+

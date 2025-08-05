@@ -1,0 +1,58 @@
+/* Modo oscuro: fondo oscuro y texto claro */
+body {
+  background-color: #121212;
+  color: #FAFAFA;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilos base para la lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilo para cada fruta con su color representativo */
+.manzana {
+  color: red;
+}
+
+.banana {
+  color: gold;
+}
+
+.kiwi {
+  color: green;
+}
+
+.naranja {
+  color: orange;
+}
+
+.uva {
+  color: purple;
+}
+
+.sandia {
+  color: #e53935; /* rojo sandía */
+}
+
+.limon {
+  color: #fdd835; /* amarillo limón */
+}
+
+.cereza {
+  color: #b71c1c; /* rojo cereza */
+}
+
+.mango {
+  color: #ffb300; /* naranja mango */
+}
+
+.arándano {
+  color: #3949ab; /* azul arándano */
+}

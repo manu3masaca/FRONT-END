@@ -1,0 +1,40 @@
+/* Fuente general */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: #212121; /* Fondo oscuro */
+  color: #FAFAFA;             /* Texto claro */
+  margin: 40px;
+}
+
+/* Estilo del título h1 */
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+/* Estilo del párrafo */
+p {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Color especial para el nombre */
+.nombre {
+  color: #f72585; /* rosa fuerte */
+}
+
+/* Colores distintos para cada palabra clave */
+.programadora {
+  color: #4cc9f0; /* celeste */
+}
+
+.rapera {
+  color: #ffb703; /* amarillo intenso */
+}
+
+.tatuadora {
+  color: #c77dff; /* lila */
+}

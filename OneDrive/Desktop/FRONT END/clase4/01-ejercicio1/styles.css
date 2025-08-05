@@ -1,0 +1,39 @@
+/* Aplicar la fuente Montserrat a toda la página */
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 40px;
+  background-color: #fff;
+}
+
+/* Estilo del título h1 */
+h1 {
+  font-size: 120px;
+  font-weight: 900; /* Peso fuerte como se pidió */
+  margin-bottom: 20px;
+}
+
+/* Estilo del párrafo */
+p {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Color especial para el nombre */
+.nombre {
+  color: #d72638; /* rojo */
+}
+
+/* Colores distintos para cada palabra clave */
+.programadora {
+  color: #3a86ff; /* azul */
+}
+
+.rapera {
+  color: #ffbe0b; /* amarillo */
+}
+
+.tatuadora {
+  color: #8338ec; /* púrpura */
+}

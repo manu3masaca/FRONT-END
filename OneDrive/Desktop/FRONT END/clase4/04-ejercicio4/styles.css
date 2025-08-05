@@ -1,0 +1,45 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+  background-color: #212121; /* Fondo oscuro */
+}
+
+/* Centrar todo el contenido de la página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Contenedor del paisaje en línea */
+.paisaje {
+  display: flex;
+  gap: 10px;
+}
+
+/* Clase base para todos los emojis */
+.emoji {
+  display: inline-block;
+}
+
+/* Tamaños distintos para variedad */
+.tamaño-1 {
+  font-size: 24px;
+}
+
+.tamaño-2 {
+  font-size: 32px;
+}
+
+.tamaño-3 {
+  font-size: 40px;
+}
+
+.tamaño-4 {
+  font-size: 48px;
+}
+
+.tamaño-5 {
+  font-size: 56px;
+}

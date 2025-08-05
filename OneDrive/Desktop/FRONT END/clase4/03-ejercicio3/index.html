@@ -1,0 +1,62 @@
+<!-- Artículo
+index.html debe tener:
+
+un título h1 con un tamaño de letra más grande y una tipografía distinta de la que viene por defecto. Poner un título
+cualquiera (o aleatorio).
+un texto que diga: Publicado por @adalovelace hace 3 días. @adalovelace debe ser un link (que no lleve a ningún). El
+texto debe tener un color gris mientras que el link un color celeste. El link no debe tener subrayado. El texto debe
+tener la misma tipografía que los siguientes párrafos.
+4 párrafos p con lorem ipsum y una tipografía distinta a la del título:
+El primer párrafo debe tener una oración en itálica.
+El segundo párrafo debe tener una oración en negrita.
+El tercer párrafo debe estar completamente en itálica y tener una tipografía distinta a la de los párrafos.
+El cuarto párrafo debe tener 2 palabras en negrita y 2 palabras en itálica. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Artículo</title>
+</head>
+<body>
+
+  <!-- Título del artículo -->
+  <h1>El futuro de la inteligencia artificial</h1>
+
+  <!-- Información del autor con @nombre enlazado -->
+  <p class="autor">
+    Publicado por 
+    <a href="#">@adalovelace</a> hace 3 días.
+  </p>
+
+  <!-- Primer párrafo con una oración en itálica -->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    <em>Esta es una oración en itálica.</em> Nullam euismod, nisi vel consectetur.
+  </p>
+
+  <!-- Segundo párrafo con una oración en negrita -->
+  <p>
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem. 
+    <strong>Esta es una oración en negrita.</strong> Accusantium doloremque laudantium.
+  </p>
+
+  <!-- Tercer párrafo completamente en itálica y con otra fuente -->
+  <p class="parrafo-especial">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium, magna ut 
+    pretium malesuada, justo nulla tincidunt elit, a tincidunt nunc arcu ut nisi.
+  </p>
+
+  <!-- Cuarto párrafo con 2 palabras en negrita y 2 en itálica -->
+  <p>
+    Lorem <strong>innovador</strong> ipsum dolor <em>creativo</em> sit amet, 
+    <strong>tecnología</strong> en constante <em>evolución</em>.
+  </p>
+
+</body>
+</html>

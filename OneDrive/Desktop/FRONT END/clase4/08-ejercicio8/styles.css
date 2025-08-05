@@ -1,0 +1,36 @@
+/* Modo oscuro y contenido centrado */
+body {
+  background-color: #121212;
+  color: #FAFAFA;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Lista centrada y sin viñetas */
+.termometro {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Estilos base de cada ítem */
+.termometro li {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Colores graduales de azul a rojo */
+.t0  { color: #2196F3; }   /* azul */
+.t5  { color: #42A5F5; }
+.t10 { color: #64B5F6; }
+.t15 { color: #90CAF9; }
+.t20 { color: #A5D6A7; }   /* verde claro */
+.t25 { color: #FFF176; }   /* amarillo */
+.t30 { color: #FFB74D; }
+.t35 { color: #FF8A65; }
+.t40 { color: #EF5350; }
+.t50 { color: #F44336; }   /* rojo */

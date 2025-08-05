@@ -1,0 +1,64 @@
+/* Estilo general: modo oscuro y fuente personalizada */
+body {
+  background-color: #212121;
+  color: #FAFAFA;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+  font-style:oblique;
+}
+
+/* Títulos principales */
+h1 {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+/* Estilo de párrafos */
+h2 {
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Lista de colores con estilo */
+.paleta {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Estilo de cada color en la paleta */
+.paleta li {
+  padding: 20px;
+  min-width: 180px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Colores de la paleta HEX */
+.hex1 { background-color: #FFFFFF; color: #121212; }
+.hex2 { background-color: #1F1F1F; color: #FAFAFA; }
+.hex3 { background-color: #FF4081; color: #121212; }
+.hex4 { background-color: #40C4FF; color: #121212; }
+.hex5 { background-color: #212121; color: #FAFAFA; }
+
+/* Colores de la paleta RGB */
+.rgb1 { background-color: rgb(0, 0, 0); color: #FAFAFA; }
+.rgb2 { background-color: rgb(255, 0, 0); color: #121212; }
+.rgb3 { background-color: rgb(0, 255, 0); color: #121212; }
+.rgb4 { background-color: rgb(0, 0, 255); color: #FAFAFA; }
+.rgb5 { background-color: rgb(255, 255, 0); color: #121212; }
+
+/* Colores de la paleta HSL */
+.hsl1 { background-color: hsl(340, 100%, 90%); color: #121212; }
+.hsl2 { background-color: hsl(200, 100%, 85%); color: #121212; }
+.hsl3 { background-color: hsl(120, 60%, 85%); color: #121212; }
+.hsl4 { background-color: hsl(45, 100%, 85%); color: #121212; }
+.hsl5 { background-color: hsl(280, 60%, 85%); color: #121212; }

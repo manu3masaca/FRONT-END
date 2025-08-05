@@ -1,0 +1,22 @@
+/* Modo oscuro: fondo oscuro, texto claro */
+body {
+  background-color: #121212;
+  color: #FAFAFA;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+/* Estilo para párrafos alineados a la izquierda */
+.izquierda {
+  text-align: left;
+}
+
+/* Estilo para párrafos centrados */
+.centro {
+  text-align: center;
+}
+
+/* Estilo para párrafos alineados a la derecha */
+.derecha {
+  text-align: right;
+}

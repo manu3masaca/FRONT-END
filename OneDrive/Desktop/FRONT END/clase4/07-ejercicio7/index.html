@@ -1,0 +1,79 @@
+<!-- Paleta de Colores
+index.html debe tener:
+
+un título h1 que diga: Mis paletas
+
+3 paletas de colores, que consisten en:
+
+un título h2 con el nombre de la paleta (por ejemplo: Moderna)
+una lista desordenada con 5 ítems
+cada ítem debe tener como texto código del color, en el sistema correspondiente (por ejemplo, si es blanco y está 
+en hexadecimal #FFFFFF)
+Poner un tipografía distinta a la default.
+
+Dar a los títulos un tamaño de fuente distinto al default.
+
+Cada ítem debe de tener de color de fondo el color que representa (por ejemplo, si representa el color negro, tener 
+de color de fondo dicho color).
+
+Tener en cuenta el contraste, si el color de fondo es muy oscuro, poner un color de letra claro, y viceversa.
+
+Los colores de la primera paleta deben estar en sistema hexadecimal, los de la segunda en sistema rgb y los de la 
+tercera en sistema hsl. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Enlace al archivo de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Paleta de Colores</title>
+</head>
+<body>
+
+  <!-- Título principal -->
+  <h1>Mis paletas</h1>
+
+<!-- paletas -->
+
+<!-- paleta moderna -->
+  <section>
+    <h2>Moderna</h2>
+    <ul class="paleta">
+      <li class="hex1">#FFFFFF</li>
+      <li class="hex2">#1F1F1F</li>
+      <li class="hex3">#FF4081</li>
+      <li class="hex4">#40C4FF</li>
+      <li class="hex5">#212121</li>
+    </ul>
+  </section>
+
+<!-- paleta clásica -->
+  <section>
+    <h2>Clásica</h2>
+    <ul class="paleta">
+      <li class="rgb1">rgb(0, 0, 0)</li>
+      <li class="rgb2">rgb(255, 0, 0)</li>
+      <li class="rgb3">rgb(0, 255, 0)</li>
+      <li class="rgb4">rgb(0, 0, 255)</li>
+      <li class="rgb5">rgb(255, 255, 0)</li>
+    </ul>
+  </section>
+
+<!-- paleta pastel -->
+  <section>
+    <h2>Pastel</h2>
+    <ul class="paleta">
+      <li class="hsl1">hsl(340, 100%, 90%)</li>
+      <li class="hsl2">hsl(200, 100%, 85%)</li>
+      <li class="hsl3">hsl(120, 60%, 85%)</li>
+      <li class="hsl4">hsl(45, 100%, 85%)</li>
+      <li class="hsl5">hsl(280, 60%, 85%)</li>
+    </ul>
+  </section>
+
+
+

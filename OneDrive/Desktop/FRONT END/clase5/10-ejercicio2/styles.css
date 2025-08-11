@@ -1,0 +1,44 @@
+/* Fondo oscuro y texto centrado */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Shadows Into Light", cursive, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Estados */
+.estado {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    color: #fff;
+}
+
+/* Colores por estado */
+.pendiente {
+    background-color: #2196f3; /* Azul */
+}
+.haciendo {
+    background-color: #ff9800; /* Naranja */
+}
+.hecha {
+    background-color: #4caf50; /* Verde */
+}
+.cancelada {
+    background-color: #f44336; /* Rojo */
+}

@@ -1,0 +1,32 @@
+/* --- Estilo general en modo oscuro --- */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* --- Lista de frutas --- */
+.frutas {
+    list-style: none; /* Quitamos viñetas */
+    padding: 0;
+}
+
+.frutas li {
+    background-image: linear-gradient(to right top, #087817, #008e3e, #00a462, #00bb86, #12d1aa);
+    padding: 10px 20px; /* Modelo de caja: espacio interno */
+    margin: 8px 0;      /* Modelo de caja: espacio externo */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* --- Efecto al pasar el mouse --- */
+.frutas li:hover {
+    background-color: #333;
+}

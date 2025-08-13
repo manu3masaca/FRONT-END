@@ -1,0 +1,68 @@
+/* Contenedor principal centrado */
+.contenedor-banderas {
+    display: flex;
+    flex-direction: column; /* apilar verticalmente */
+    align-items: center; /* centrar horizontalmente */
+    gap: 30px; /* espacio entre cajas */
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Caja individual de cada bandera */
+.caja-bandera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden; /* para que las franjas no se salgan de la caja */
+}
+
+/* Nombre de la bandera */
+.nombre-bandera {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo general de cada bandera */
+.bandera {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* franjas apiladas verticalmente por defecto */
+    border: 15px solid #27ceec50;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Cada franja ocupa un tercio de la bandera */
+.franja {
+    flex: 1;
+}
+
+/* Colores de las franjas por clase */
+.celeste { background-color: #74ACDF; }
+.blanca { background-color: #FFFFFF; }
+.negra { background-color: #000000; }
+.roja { background-color: #FF0000; }
+.amarilla { background-color: #FFD700; }
+.azul { background-color: #0055A4; }
+.verde { background-color: #008000; }
+
+/* Franjas verticales para banderas que lo requieran */
+.francia, .mexico, .italia {
+    display: flex;
+    flex-direction: row; /* importantísimo: franjas en fila */
+}
+
+.francia .franja,
+.mexico .franja,
+.italia .franja {
+    flex: 1; /* dividir el ancho en 3 partes iguales */
+    height: 100%;
+}
+
+

@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+  background-image: linear-gradient(to right, #2c13d8, #510dd6, #6a08d4, #7d04d1, #8e03cf);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Estilos de la tarjeta */
+.container {
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+h2 {
+  color: rgb(0, 0, 0);
+}
+
+/* Estilos de la lista */
+.lista {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* Estilos de la lista */
+.lista h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/* Estilos de la tarjeta */
+.tarjeta {
+  background-image: linear-gradient(to right, #2c13d8, #510dd6, #6a08d4, #7d04d1, #8e03cf);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 0 rgba(30, 7, 236, 0.705);
+}
+
+/* Estilos del input */
+input {
+  width: 100%;
+  padding: 1px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 5px;
+  background-image: linear-gradient(to right, #2c13d8, #510dd6, #6a08d4, #7d04d1, #8e03cf);
+
+}
+
+/* Estilos del encabezado de la tarjeta */
+h3 {
+  color: transparent;
+  background-image: linear-gradient(to right, #2c13d8, #510dd6, #6a08d4, #7d04d1, #8e03cf);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Estilos del placeholder del input */
+input::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+}

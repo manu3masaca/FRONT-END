@@ -1,0 +1,75 @@
+/* Fondo degradado */
+body {
+  background-image: linear-gradient(to right, #16825c, #147c5b, #14765a, #167059, #186a57);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Estilo del título */
+.header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Estilo del botón */
+.header button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #aaa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo del botón al pasar el mouse */
+.header button:hover {
+  border-color: #1bddb3;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilo de los elementos de la lista */
+.item {
+  background-image: linear-gradient(to bottom, #08cd88, #12cb90, #1fc998, #2cc69e, #39c4a4);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid transparent;
+}
+
+.item h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.item p {
+  margin: 0;
+  font-size: 13px;
+  color: #000000;
+}
+
+/* Bordes degradados */
+.pink { border-image: linear-gradient(180deg, #ff758c, #ff7eb3) 1; }
+.purple { border-image: linear-gradient(180deg, #8e2de2, #a17fe0) 1; }
+.orange { border-image: linear-gradient(180deg, #ff9966, #ff5e62) 1; }

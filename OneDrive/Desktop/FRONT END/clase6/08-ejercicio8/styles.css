@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left, #e9e917, #f5ca00, #fdab00, #ff8900, #ff6401);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background-image: linear-gradient(to right, #e9e917, #f5ca00, #fdab00, #ff8900, #ff6401);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+    text-align: center;
+    max-width: 350px;
+}
+
+/* Estilos del icono */
+.icon span {
+    font-size: 40px;
+}
+
+/* Estilos del encabezado */
+h2 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #222;
+}
+
+/* Estilos del mensaje */
+.email {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la información */
+.info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la caja de recuperación */
+.box {
+    background-image: linear-gradient(to bottom, #e9e917, #f5ca00, #fdab00, #ff8900, #ff6401);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px #994504;
+}
+
+/* Estilos del botón de actualización */
+.update {
+    background-color: #fd6100;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #994504;
+}
+
+/* Estilos del botón de confirmación */
+.confirm {
+    background-color: #fffb00;
+    color: rgb(247, 90, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 8px #b34500;
+
+}
+
+.confirm:hover {
+    background-color: #15213b;
+}

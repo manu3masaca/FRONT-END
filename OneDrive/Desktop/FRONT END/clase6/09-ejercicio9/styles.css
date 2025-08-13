@@ -1,0 +1,83 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #000000, #161515, #252221, #35302e, #443f3b);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(11, 255, 174)
+}
+
+/* Estilos del encabezado */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos de las pestañas */
+.tabs {
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones */
+.tabs button {
+    padding: 8px 15px;
+    border: none;
+    background-image: linear-gradient(to right, #000000, #161515, #252221, #35302e, #443f3b);
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    color:rgb(126, 255, 240)
+
+}
+
+/* Estilos de los botones activos */
+.tabs button.active {
+    background-image: linear-gradient(to right, #00ffe1, #00ffd6, #00ffca, #00ffbc, #00ffad);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos de los eventos */
+.evento {
+    background-image: linear-gradient(to bottom, #3a3838, #2d2b2b, #201f1f, #141313, #000000);
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.765);
+}
+
+/* Estilos de los eventos cancelados */
+.evento.cancelado {
+    border-left: 5px solid rgb(255, 0, 0);
+    opacity: 0.7;
+    background-image:linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000);
+}
+
+/* Estilos de la fecha */
+.fecha {
+    font-size: 0.9em;
+    color: #01fff2;
+}
+
+/* Estilos de la descripción */
+.descripcion {
+    margin: 10px 0;
+    font-size: 0.95em;
+    color: #74ffbe;
+}
+
+/* Estilos del enlace "ver más" */
+.ver-mas {
+    display: inline-block;
+    margin-top: 10px;
+    color: #84fdfd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilos del enlace "ver más" al pasar el mouse */
+.ver-mas:hover {
+    text-decoration: underline;
+}

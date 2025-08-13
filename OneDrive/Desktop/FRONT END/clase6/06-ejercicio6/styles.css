@@ -1,0 +1,84 @@
+/* estilos generales*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilos de la tarjeta */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Estilos del mensaje */
+.mensaje {
+
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #d8135b, #db004a, #dd0038, #dc0023, #d80505);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Estilos de las opciones */
+.opciones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Estilos de los botones */
+.opciones button {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #ea0091;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Estilos de los botones al pasar el mouse */
+.opciones button:hover {
+  border-color: #888;
+  color: #fff;
+}
+
+/* Estilos de la opción activa */
+.opciones .activo {
+  background-image: linear-gradient(to right, #d8135b, #db004a, #dd0038, #dc0023, #d80505);
+  color: #fffdfd;
+  border: none;
+}
+
+/* Estilos del botón continuar */
+.continuar {
+  background-image: linear-gradient(to right, #d8135b, #db004a, #dd0038, #dc0023, #d80505);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 0, 140, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.continuar:hover {
+  background-image: linear-gradient(to right, #d8135b, #db004a, #dd0038, #dc0023, #d80505);
+}

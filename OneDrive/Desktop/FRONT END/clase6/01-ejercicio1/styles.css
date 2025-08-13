@@ -1,0 +1,66 @@
+/* --- Estilos generales --- */
+body {
+    background-color: #f7f8fc;
+    font-family: Arial, sans-serif;
+    display: flex; /* Centrar contenido */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* --- Tarjeta --- */
+.card {
+    background: #fff;
+    width: 320px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* --- Ícono --- */
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* --- Título --- */
+.card h2 {
+    font-size: 20px;
+    color: #1a2c5b;
+    margin: 0 0 10px 0;
+}
+
+/* --- Texto --- */
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* --- Enlace --- */
+.card a {
+    color: #3b6de2;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* --- Botón --- */
+button {
+    background-image: linear-gradient(to right top, #e31796, #ef0079, #f4005a, #f3003a, #eb1212);
+    border: none;
+    color: rgb(233, 225, 13);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+

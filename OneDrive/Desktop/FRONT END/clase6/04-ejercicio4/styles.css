@@ -1,0 +1,27 @@
+/* Estilo general del body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrar horizontalmente */
+    gap: 20px; /* espacio entre barras */
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* modo oscuro */
+    color: rgb(224, 185, 10);
+}
+
+/* Contenedor de cada barra */
+.barra-contenedora {
+    width: 500px;
+    height: 30px;
+    background-color: #484848; /* color de fondo */
+    padding: 3px; /* padding solicitado */
+    border-radius: 100px; /* borde redondeado */
+}
+
+/* Barra interna que indica progreso */
+.barra-progreso {
+    height: 100%;
+    background: linear-gradient(to right, #c108cd, #ff0084, #ff513e, #f89b00, #c1d112); /* color de la barra de progreso */
+    border-radius: 100px; /* borde redondeado */
+}

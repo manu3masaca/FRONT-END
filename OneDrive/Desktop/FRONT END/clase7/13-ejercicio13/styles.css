@@ -1,0 +1,95 @@
+/* ===== Reset ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #E9ECF2;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ===== Notificación de copia ===== */
+.notification {
+  background: #111827;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: fixed;
+  top: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar notificación */
+.notification.show {
+  opacity: 1;
+}
+
+/* ===== Título ===== */
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* ===== Contenedor de paleta ===== */
+.palette {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* ===== Tarjetas de color ===== */
+.color-card {
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-card:hover {
+  transform: translateY(-5px);
+}
+
+.color-card p {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+/* ===== Botón ===== */
+.generate-btn {
+  background: #7A6CE4;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background: #5d4cc9;
+}
+
+/* ===== Textos de ayuda ===== */
+.help-text {
+  margin-top: 15px;
+  color: #555;
+}
+
+.help-text.small {
+  font-size: 12px;
+  margin-top: 10px;
+}

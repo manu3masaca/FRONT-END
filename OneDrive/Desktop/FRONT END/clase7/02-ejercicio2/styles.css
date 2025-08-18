@@ -1,0 +1,127 @@
+/* Fondo gris general */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d3d3d3;
+}
+
+/* Contenedor de todos los dados */
+.dice-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Cada dado */
+.dice {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+/* Puntos del dado */
+.dice span {
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+}
+
+/* Posiciones específicas de cada número */
+.one span {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.two span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two span:nth-child(2) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.three span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.three span:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.three span:nth-child(3) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.four span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.four span:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four span:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.four span:nth-child(4) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.five span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.five span:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.five span:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five span:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.five span:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.six span:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.six span:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.six span:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.six span:nth-child(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+.six span:nth-child(5) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six span:nth-child(6) {
+  grid-column: 3;
+  grid-row: 3;
+}

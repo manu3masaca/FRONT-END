@@ -1,0 +1,81 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1da1f2; /* azul estilo Twitter */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor tweet */
+.tweet {
+  background: #fff;
+  border-radius: 6px;
+  width: 500px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.handle {
+  color: #555;
+  font-size: 13px;
+}
+
+/* Texto */
+.tweet-text {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* Fecha */
+.tweet-date {
+  font-size: 13px;
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+/* Línea divisoria */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Métricas */
+.tweet-metrics {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tweet-metrics strong {
+  color: #000;
+}
+
+/* Acciones */
+.tweet-actions {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #555;
+}

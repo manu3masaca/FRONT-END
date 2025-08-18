@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  width: 1000px;
+}
+
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Tarjetas izquierda */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  flex: 2;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card i {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card.active {
+  background: #ffb800;
+  color: #1a1a1a;
+}
+
+.card.active i,
+.card.active h3,
+.card.active p {
+  color: #1a1a1a;
+}
+
+/* Blog derecha */
+.blog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1;
+}
+
+.blog h3 {
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.blog ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog li {
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.blog li:hover {
+  background: #f4f4f4;
+}
+
+.blog li span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.blog li p {
+  font-size: 13px;
+  color: #ffb800;
+}
+
+.blog li.highlight {
+  background: #f1f2f8;
+}

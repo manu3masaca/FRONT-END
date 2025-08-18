@@ -1,0 +1,31 @@
+<!-- Layout
+Usando HTML semántico y Flexbox, replicar los siguientes layouts, cada uno en un archivo .html aparte (deben ocupar 
+toda la página y las regiones deben distinguirse con colores diferentes, como se muestra en las imágenes): -->
+
+<!-- layout-5.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout 5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="canvas">
+        <div class="row">
+          <!-- Panel izquierdo -->
+          <aside class="region left">Left Panel</aside>
+
+          <!-- Contenedor vertical con header, main y footer -->
+          <div class="column">
+            <header class="region header">Header</header>
+            <main class="region main">Main Content</main>
+            <footer class="region footer">Footer</footer>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

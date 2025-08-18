@@ -1,0 +1,103 @@
+/* estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #d8cfff, #a9b0ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* estilos del modal */
+.modal {
+  background: #111032;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* estilos del encabezado */
+.modal h2 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* estilos del botón de cierre */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* estilos de la caja de valoración */
+.rating-box {
+  background: #1a1947;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* estilos del texto de la caja de valoración */
+.rating-box p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* estilos de las estrellas */
+.stars {
+  font-size: 28px;
+  color: #444;
+}
+
+/* estilos de las estrellas activas */
+.stars .active {
+  color: gold;
+}
+
+/* estilos de las etiquetas */
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* estilos de los botones */
+.btn {
+  background: #6a0dad;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* estilos del botón de hover */
+.btn:hover {
+  background: #8338ec;
+}
+
+/* estilos del enlace "Unirse de nuevo" */
+.again {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* estilos del enlace "Unirse de nuevo" */
+.again:hover {
+  color: white;
+}

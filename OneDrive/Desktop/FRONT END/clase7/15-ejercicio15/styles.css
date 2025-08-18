@@ -1,0 +1,84 @@
+/* Layout general */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f3f6ff;
+  text-align: center; /* preferencia del usuario */
+  color: #1e2a3a;
+}
+h1 { margin: 24px 0; }
+
+.wrapper { display: inline-block; }
+
+/* Tabla principal */
+table.periodic {
+  border-collapse: separate;
+  border-spacing: 6px;
+  margin: 0 auto;
+}
+
+td.gap { width: 64px; height: 64px; }
+
+/* Celda de elemento */
+.el {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #fff7cc;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset, 0 2px 6px rgba(0,0,0,.07);
+}
+.el .num {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 11px;
+  color: #222;
+}
+.el .sym {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Nota de bloque f en filas 6 y 7 */
+.fblock-note {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #c7f7ff;
+  color: #0e4b5f;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset, 0 2px 6px rgba(0,0,0,.07);
+}
+.fblock-note.f-act { background: #a9d2ff; color: #0f2c57; }
+
+/* Bloque f (tablas inferiores) */
+.f-block {
+  margin-top: 16px;
+}
+.f-block .periodic td { width: 64px; height: 64px; }
+
+/* Paleta por familias (colores aproximados a la imagen) */
+.alkali        { background: #f6b24e; }
+.alkaline      { background: #ff8a8a; }
+.transition    { background: #ffe58b; }
+.posttransition{ background: #f6c2ff; }
+.metalloid     { background: #b8ffc4; }
+.nonmetal      { background: #ffe3b0; }
+.halogen       { background: #b8ffc4; }
+.noble         { background: #c8b3a6; }
+.lanthanoid    { background: #9ff1ff; }
+.actinoid      { background: #67b7ff; }
+
+/* Sombras suaves para contraste */
+.alkali,.alkaline,.transition,.posttransition,.metalloid,.nonmetal,
+.halogen,.noble,.lanthanoid,.actinoid {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset, 0 2px 6px rgba(0,0,0,.07);
+}

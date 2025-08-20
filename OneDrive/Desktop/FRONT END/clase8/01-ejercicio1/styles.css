@@ -1,0 +1,44 @@
+/* Reset básico para quitar márgenes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hacer que body ocupe todo el ancho y alto de la pantalla */
+body {
+  display: flex; /* Usamos flexbox para centrar */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* 100% del alto de la pantalla */
+  width: 100vw;   /* 100% del ancho de la pantalla */
+  background-color: #1e1e1e; /* Fondo inicial (oscuro) */
+   font-family: "Winky Rough", sans-serif; /* Tipografía */
+}
+
+/* Estilo base del h1 */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff; /* Texto blanco para contraste */
+}
+
+/* Breakpoint entre 600px y 900px */
+@media (max-width: 900px) and (min-width: 601px) {
+  body {
+    background-color: #2e3b55; /* Cambia color de fondo */
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* Breakpoint para menos de 600px */
+@media (max-width: 600px) {
+  body {
+    background-color: #4b2e55; /* Otro color de fondo */
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Reservation</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="reservation-card">
+    <h2>NEW QUICK RESERVATION</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Adults</label>
+          <select><option>1</option><option selected>2</option><option>3</option></select>
+        </div>
+        <div class="form-group">
+          <label>Children</label>
+          <select><option selected>0</option><option>1</option><option>2</option></select>
+        </div>
+        <div class="form-group">
+          <label>Rate Type</label>
+          <select><option selected>Rack Rate</option><option>Promo</option></select>
+        </div>
+        <div class="form-group">
+          <label>Rooms</label>
+          <select><option selected>1</option><option>2</option></select>
+        </div>
+        <div class="info-box">
+          <p><strong>Room Type</strong><br>Deluxe</p>
+          <p><strong>Duration</strong><br>May 28 - Jun 2</p>
+          <p><strong>Price</strong><br>$45/night | <b>Total $270</b></p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group small">
+          <label>Title</label>
+          <select><option>Mr.</option><option>Ms.</option><option>Mrs.</option></select>
+        </div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" value="Garrett">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" value="Watson">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter Phone Number">
+        </div>
+      </div>
+
+      <div class="form-row radio-group">
+        <label><input type="radio" name="type"> Single</label>
+        <label><input type="radio" name="type" checked> Group</label>
+        <label><input type="radio" name="type"> Business</label>
+      </div>
+
+      <div class="buttons">
+        <button class="btn blue-light" type="button">Temp Reserve</button>
+        <button class="btn blue" type="submit">Reserve</button>
+        <button class="btn blue-dark" type="button">Check-In</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

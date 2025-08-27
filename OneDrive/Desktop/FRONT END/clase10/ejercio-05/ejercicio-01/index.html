@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- Mensaje de respuesta solucionada -->
+  <div class="alert">
+    <span class="check">✔</span>
+    <p>
+      Solved by <a href="#">Charlie_reid</a> in post #2 <br>
+      <small>El answer fue identificado. Todos los redirects creados se pueden encontrar en la pestaña de hosting de la configuración del proyecto.</small>
+    </p>
+  </div>
+
+  <div class="container">
+    <!-- Crear nuevo tema -->
+    <div class="card">
+      <h3>Create a new Topic</h3>
+      <input type="text" placeholder="Type title, or paste a link here">
+      <div class="row">
+        <select>
+          <option>Category</option>
+          <option>Community resources</option>
+          <option>Design help</option>
+          <option>Publishing Help</option>
+        </select>
+        <select>
+          <option>Tags</option>
+          <option>UI</option>
+          <option>UX</option>
+          <option>Frontend</option>
+        </select>
+      </div>
+      <textarea placeholder="Enter your description here"></textarea>
+      <div class="buttons">
+        <button class="create">+ Create Topic</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <select>
+        <option>All categories</option>
+      </select>
+      <select>
+        <option>All tags</option>
+      </select>
+      <button class="latest">Latest</button>
+    </div>
+
+    <!-- Categorías -->
+    <div class="categories">
+      <p><span class="dot blue"></span> Community resources</p>
+      <p><span class="dot purple"></span> Design help</p>
+      <p><span class="dot red"></span> Publishing Help</p>
+    </div>
+
+    <!-- Temas -->
+    <div class="topic">
+      <h4>Navbar Dropdown on Mobile</h4>
+      <p><span class="dot red"></span> Publishing Help</p>
+      <div class="avatars">
+        <img src="https://i.pravatar.cc/30?img=1" alt="user">
+        <img src="https://i.pravatar.cc/30?img=2" alt="user">
+        <img src="https://i.pravatar.cc/30?img=3" alt="user">
+      </div>
+    </div>
+
+    <div class="topic">
+      <h4>Persistent Dark Mode</h4>
+      <p><span class="dot purple"></span> Design Help</p>
+      <div class="avatars">
+        <img src="https://i.pravatar.cc/30?img=4" alt="user">
+        <img src="https://i.pravatar.cc/30?img=5" alt="user">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Panel izquierdo -->
+    <div class="left-panel">
+      <h3>SHIPMENT</h3>
+      <h1>Let's Get <br> <span>Started</span></h1>
+      <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      <a href="#">SIGN UP HERE</a>
+    </div>
+
+    <!-- Panel derecho -->
+    <div class="right-panel">
+      <h2>REGISTER WITH YOUR WORK EMAIL ADDRESS</h2>
+      
+      <form>
+        <!-- Nombre -->
+        <div class="form-row">
+          <input type="text" placeholder="First Name *" required>
+          <input type="text" placeholder="Middle Name">
+          <input type="text" placeholder="Last Name *" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Email Address *" required>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="form-group">
+          <i class="fa fa-phone"></i>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="form-row">
+          <div class="form-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password *" required>
+          </div>
+          <div class="form-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Confirm Password *" required>
+          </div>
+        </div>
+
+        <!-- Más info -->
+        <h4>Other Information</h4>
+        <div class="form-row">
+          <input type="text" placeholder="Have a referral code?">
+          <input type="text" placeholder="Promo Code">
+        </div>
+
+        <select>
+          <option>How did you hear about us?</option>
+          <option>Google</option>
+          <option>Facebook</option>
+          <option>Friends</option>
+        </select>
+
+        <select>
+          <option>Country</option>
+          <option>USA</option>
+          <option>Mexico</option>
+          <option>Colombia</option>
+        </select>
+
+        <div class="form-row">
+          <input type="text" placeholder="Address Line 1">
+          <input type="text" placeholder="Apartment, Unit, Office">
+        </div>
+
+        <div class="form-row">
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="State">
+          <input type="text" placeholder="Zip Code">
+        </div>
+
+        <!-- Checkbox -->
+        <label class="checkbox">
+          <input type="checkbox" required> I read and agree to <a href="#">terms & conditions</a>.
+        </label>
+
+        <!-- Botón -->
+        <button type="submit" class="btn">SIGN UP</button>
+
+        <!-- Footer -->
+        <p class="footer-text">Have an Account? <a href="#">Please Sign up</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

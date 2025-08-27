@@ -1,0 +1,84 @@
+/* Fondo */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.background {
+  background: url(https://img.freepik.com/foto-gratis/hermoso-arco-iris-naturaleza_23-2151498214.jpg?semt=ais_hybrid&w=740&q=80) no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja azul */
+.form-container {
+  background: #55c3db;
+  padding: 20px 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #ddd;
+  padding-right: 14px;
+}
+
+.form-group:last-of-type {
+  border-right: none;
+  padding-right: 0;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+input, select {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  width: 140px;
+}
+
+input[type="date"] {
+  padding: 4px;
+}
+
+/* Botón */
+button {
+  background: #ff007f;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e60073;
+}

@@ -1,0 +1,62 @@
+<!-- Carga de productos Crearemos un formulario para la carga rápida de productos para una empresa de bicicletas. 
+Para eso mostraremos los siguientes campos: Título de producto (input de texto) Marca (select con options): Klatter 
+Top Mega Fierce Shimano Lamborghini Aurora GT Rodado (input numérico) Categoría de producto (radio button): 
+Mountain Bike Paseo Plegable Carrera Descripción del producto (textarea) Botón que diga "Cargar" (de tipo submit) 
+Tanto el select como los radio deben tener el atributo value con el mismo valor que tienen en el texto. No es 
+necesario agregarles estilos -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carga de Productos - Bicicletas</title>
+</head>
+<body>
+  <!-- Formulario de carga de productos -->
+  <h1>Carga rápida de productos</h1>
+  
+  <form action="#" method="post">
+    
+    <!-- Campo de texto: título -->
+    <label for="titulo">Título de producto:</label><br>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+    
+    <!-- Select: marca -->
+    <label for="marca">Marca:</label><br>
+    <select id="marca" name="marca" required>
+      <option value="Klatter">Klatter</option>
+      <option value="Top Mega">Top Mega</option>
+      <option value="Fierce">Fierce</option>
+      <option value="Shimano">Shimano</option>
+      <option value="Lamborghini">Lamborghini</option>
+      <option value="Aurora GT">Aurora GT</option>
+    </select><br><br>
+    
+    <!-- Input numérico: rodado -->
+    <label for="rodado">Rodado:</label><br>
+    <input type="number" id="rodado" name="rodado" min="12" max="29" required><br><br>
+    
+    <!-- Radio buttons: categoría -->
+    <p>Categoría de producto:</p>
+    <input type="radio" id="mountain" name="categoria" value="Mountain Bike" required>
+    <label for="mountain">Mountain Bike</label><br>
+    
+    <input type="radio" id="paseo" name="categoria" value="Paseo">
+    <label for="paseo">Paseo</label><br>
+    
+    <input type="radio" id="plegable" name="categoria" value="Plegable">
+    <label for="plegable">Plegable</label><br>
+    
+    <input type="radio" id="carrera" name="categoria" value="Carrera">
+    <label for="carrera">Carrera</label><br><br>
+    
+    <!-- Textarea: descripción -->
+    <label for="descripcion">Descripción del producto:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="5" cols="40" required></textarea><br><br>
+    
+    <!-- Botón de envío -->
+    <button type="submit">Cargar</button>
+    
+  </form>
+</body>
+</html>

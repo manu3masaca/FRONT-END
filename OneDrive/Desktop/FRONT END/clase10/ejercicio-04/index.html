@@ -1,0 +1,83 @@
+<!-- Registro de cliente (con estilos)
+Es momento de darle color a nuestros formularios. Utilizaremos el formulario de registro que hemos realizado 
+anteriormente y seguiremos los siguientes pasos:
+
+Colocarlo en un contenedor con padding y que esté centrado con respecto a la pantalla
+Nombre y apellido deben quedar en la misma línea
+DNI y Email deben estar por debajo del anterior, siendo que lógicamente el email será más largo, asignaremos más 
+espacio a este.
+Para la contraseña crearemos otro input que sea repetir contraseña del mismo tipo.
+En la parte inferior del formulario deben estar el check de "Aceptar términos y condiciones" a la derecha y el 
+botón de registrarse a la derecha.
+Los campos de input deben tener un leve redondeo
+El botón de registrar debe tener un color de fondo a elección, su borde levemente redondeado y con un box-shadow 
+sutil.
+Colocar una etiqueta small por debajo de las contraseñas donde le indiquemos al usuario que "La contraseña debe 
+tener como mínimo 8 carácteres y como máximo 16" -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Formulario de registro</h2>
+    
+    <form action="#" method="post">
+      
+      <!-- Nombre y Apellido -->
+      <div class="row">
+        <div class="col">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ada" required>
+        </div>
+        <div class="col">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Lovelace" required>
+        </div>
+      </div>
+      
+      <!-- DNI y Email -->
+      <div class="row">
+        <div class="col">
+          <label for="dni">DNI</label>
+          <input type="number" id="dni" name="dni" placeholder="12345678" maxlength="8" required
+                 oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </div>
+        <div class="col">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="adalovelace@gmail.com" required>
+        </div>
+      </div>
+      
+      <!-- Contraseña -->
+      <div class="row">
+        <div class="col">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="" minlength="8" maxlength="16" required>
+        </div>
+        <div class="col">
+          <label for="password2">Repetir contraseña</label>
+          <input type="password" id="password2" name="password2" placeholder="" minlength="8" maxlength="16" required>
+        </div>
+      </div>
+      <small>* La contraseña debe tener entre 8 y 16 caracteres</small>
+      
+      <!-- Términos y Botón -->
+      <div class="row-bottom">
+        <div>
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Aceptar términos y condiciones</label>
+        </div>
+        <button type="submit" class="btn">Registrarse</button>
+      </div>
+      
+    </form>
+  </div>
+
+</body>
+</html>

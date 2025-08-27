@@ -1,0 +1,147 @@
+/* --- General Layout --- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: rgb(207, 205, 205);
+  color: #545353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Card Container --- */
+.form-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* --- Titles --- */
+h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* --- Inputs --- */
+input, select, textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #fff;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* --- Labels --- */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7e7b7b;
+}
+
+/* --- Buttons --- */
+.btn {
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 8px 5px 0;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #4089ff;
+  color: rgb(255, 255, 255);
+}
+
+.btn.secondary {
+  background: #686767;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: #3390e7;
+}
+
+.btn.secondary:hover {
+  background: #555;
+}
+
+.btn.full {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* --- Rows --- */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small {
+  font-size: 13px;
+}
+
+/* --- Links --- */
+a {
+  color: #8082ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.center {
+  margin-top: 20px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input, select, textarea {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

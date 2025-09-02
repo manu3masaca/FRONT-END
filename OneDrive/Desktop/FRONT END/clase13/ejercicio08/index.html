@@ -1,0 +1,41 @@
+<!-- 08 - Submenú
+Al ítem Submenú del ejercicio anterior:
+
+Darle la clase "sub-menu" y agregarle como elemento hijo una nueva lista con la clase "sub-menu-oculto"
+La lista "sub-menu-oculto" debe estar oculta y debe tener 5 ítems
+Al hacer hover sobre la lista "sub-menu" debe mostrarse la lista "sub-menu-oculto" -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú con Submenú</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li class="sub-menu">Submenu
+          <ul class="sub-menu-oculto">
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 3</li>
+            <li>Opción 4</li>
+            <li>Opción 5</li>
+          </ul>
+        </li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido de prueba -->
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat.</p>
+    <div style="height: 2000px;"></div>
+  </main>
+</body>
+</html>

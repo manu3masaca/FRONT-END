@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c1c; /* Modo oscuro */
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-image: linear-gradient(to left bottom, #1e5e3c, #08604b, #006059, #006164, #17606c);;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+/* Contenedor de la imagen */
+.img-contenedor {
+  position: relative;
+}
+
+.img-contenedor img {
+  width: 100%;
+  display: block;
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.descuento {
+  background: red;
+}
+
+.envio {
+  background: rgb(23, 182, 23);
+  top: 35px; /* segunda badge debajo de la primera */
+}
+
+/* Corazón */
+.corazon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: rgb(255, 42, 42);
+  cursor: pointer;
+}
+
+/* Info de producto */
+.info {
+  padding: 15px;
+  text-align: center;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.precio {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00ff99;
+}

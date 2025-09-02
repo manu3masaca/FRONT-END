@@ -1,0 +1,36 @@
+<!-- 06 - Card de producto
+Maquetar una card de producto que contenga imagen, nombre y precio de producto. Por encima de la imagen, en la 
+esquina superior izquierda, debe contener dos badges, una para un descuento, y otra para Envío gratis. Por encima 
+de la imagen, en la esquina superior dercha, debe contener un ícono de un corazón. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Card de Producto</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome para el ícono de corazón -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="img-contenedor">
+      <!-- Badges -->
+      <span class="badge descuento">-20%</span>
+      <span class="badge envio">Envío gratis</span>
+      
+      <!-- Ícono corazón -->
+      <i class="fas fa-heart corazon"></i>
+
+      <!-- Imagen del producto -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmsBU5DiubsdFXoZWwkX3OQJWjeXSVO1xDhQ&s" alt="Producto">
+    </div>
+
+    <!-- Información -->
+    <div class="info">
+      <h3>set de colores</h3>
+      <p class="precio">$120.000</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- 10 - Validar formulario
+Al formulario anterior, agregar el atributo required a cada atributo. Hacer que aparezca sobre cada input este ícono
+a la derecha cuando dicho input está en el estado valid. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Registro</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="formulario">
+    <form>
+          <!-- cajas de texto -->
+      <div class="input-box">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Nombre de Usuario" required>
+        <i class="fa-solid fa-check check-icon"></i>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="E-mail" required>
+        <i class="fa-solid fa-check check-icon"></i>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Contraseña" required>
+        <i class="fa-solid fa-check check-icon"></i>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Repetir contraseña" required>
+        <i class="fa-solid fa-check check-icon"></i>
+      </div>
+
+      <button type="submit">Crear usuario</button>
+    </form>
+  </div>
+</body>
+</html>

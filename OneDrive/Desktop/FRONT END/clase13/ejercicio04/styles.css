@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, #c98960, #e57e6a, #fc7184, #ff67ad, #ff6be1);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #193d55; /* azul */
+  padding: 30px 20px;
+  color: rgb(250, 136, 13);
+}
+
+/* Icono del menú */
+.menu i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Contenedor de iconos a la derecha */
+.acciones {
+  display: flex;
+  gap: 20px;
+}
+
+/* Iconos individuales */
+.icono {
+  position: relative;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Burbuja de notificación */
+.notificacion {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: rgb(209, 9, 66);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  min-width: 1px;
+  text-align: center;
+}

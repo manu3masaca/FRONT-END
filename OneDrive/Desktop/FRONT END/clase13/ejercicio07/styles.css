@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: rgb(190, 190, 190);
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #060606; /* azul */
+  padding: 15px 20px;
+  z-index: 1000; /* por encima de todo */
+}
+
+/* Quitar estilos por defecto de la lista */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /* li en línea */
+  justify-content: flex-end; /* alinear a la derecha */
+  gap: 20px; /* separación entre items */
+}
+
+nav li {
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Para que no tape el contenido */
+main {
+  padding-top: 80px; /* espacio igual a la altura del header */
+}

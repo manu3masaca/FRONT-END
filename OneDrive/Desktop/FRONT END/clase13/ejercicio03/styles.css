@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #000000;
+  font-family: Arial, sans-serif;
+}
+/* Caja del contador */
+.contador {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-image: linear-gradient(to left, #091a44, #151a4d, #221954, #31155b, #400d5f);
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-size: 16px;
+}
+
+/* Puntito verde */
+.punto {
+  width: 12px;
+  height: 12px;
+  background: rgb(37, 103, 216);
+  border-radius: 50%;
+  margin-right: 8px;
+}

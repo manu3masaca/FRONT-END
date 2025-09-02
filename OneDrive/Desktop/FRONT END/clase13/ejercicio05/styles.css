@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right bottom, #091a44, #092e59, #0b426e, #115881, #1d6e94); /* modo oscuro */
+  font-family: Arial, sans-serif;
+  color: #a9ecf1;
+}
+
+.card {
+  background: #2a2a2a;
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Bandera */
+.bandera {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border: 1px solid #505050;
+}
+
+/* Foto de perfil */
+.perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* espacio para que no choque con la bandera */
+  object-fit: cover;
+  border: 3px solid #000000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+}
+
+.profesion {
+  font-size: 14px;
+  color: #bbb;
+}

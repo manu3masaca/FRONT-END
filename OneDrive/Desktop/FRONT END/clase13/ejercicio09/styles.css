@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #121212; /* Modo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del formulario */
+.formulario {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilos de las cajas de texto */
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Íconos de estado */
+.input-box i {
+  position: absolute;
+  left: 10px;
+  color: #888;
+}
+
+/* Estilos de los inputs */
+.input-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #25345b;
+  border-radius: 4px;
+  background: #2c2c2c;
+  color: white;
+  font-size: 14px;
+}
+
+/* Estilos de los placeholders */
+.input-box input::placeholder {
+  color: #aaa;
+}
+
+
+/* Estilos del botón */
+button {
+  padding: 10px;
+  border: none;
+  background: #172834;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Efecto hover del botón */
+button:hover {
+  background: #1f6fa8;
+}

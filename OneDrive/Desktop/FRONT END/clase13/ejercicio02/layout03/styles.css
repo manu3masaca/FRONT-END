@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+
+.contenedor {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  position: relative;
+}
+
+.rojo {
+  width: 60px;
+  height: 60px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.verde {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

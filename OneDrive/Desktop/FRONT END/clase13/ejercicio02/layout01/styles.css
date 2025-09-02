@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+
+.contenedor {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  position: relative;
+}
+
+/* Cuadrado rojo arriba a la izquierda */
+.rojo {
+  width: 60px;
+  height: 60px;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Cuadrado verde abajo a la derecha */
+.verde {
+  width: 30px;
+  height: 30px;
+  background: green;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

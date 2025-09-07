@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #000c78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://plus.unsplash.com/premium_photo-1673126682732-8203f39711a4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwYXp1bHxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+}
+
+/* Título */
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: rgb(5, 39, 152);
+  font-size: 3em;
+  font-weight: 300;
+  transition: transform 1s ease, opacity 1s ease;
+  z-index: 2;
+}
+
+.text-overlay strong {
+  font-weight: bold;
+}
+
+/* Diamante y sus iconos */
+.diamond {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border: 3px solid rgb(4, 1, 167);
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  width: 70%;
+  height: 70%;
+  visibility: hidden;
+  transition: visibility 1s ease, transform 3s ease;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(6, 128, 155, 0.733);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s ease;
+ 
+}
+.icon.pdf::before {
+  content: '📄';  
+}
+.icon.pdf {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+
+.icon.image::before {
+  content: '🖼️'; 
+}
+.icon.image {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+}
+
+.icon.code::before {
+  content: '💻';
+}
+.icon.code {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+}
+
+.icon.file::before {
+  content: '📂';
+}
+.icon.file {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+}
+
+
+/* Hover - Efectos */
+.container:hover .text-overlay {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.container:hover .diamond {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+}
+
+.container:hover .icon-container {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.container:hover .icon {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.container:hover .icon.pdf {
+  transform: translateX(-50px);
+}
+
+.container:hover .icon.image {
+  transform: translateY(-50px);
+}
+
+.container:hover .icon.code {
+  transform: translateX(50px);
+}
+
+.container:hover .icon.file {
+  transform: translateY(50px);
+}

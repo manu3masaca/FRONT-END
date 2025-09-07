@@ -1,0 +1,152 @@
+/* Fuente y estructura general */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ff2c88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2018/02/08/22/27/flower-3140492_640.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease;
+}
+
+/* Capa rosada encima */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ 
+  top: 0;
+  left: 0;
+  transition: background-color 3s ease;
+  z-index: 0;
+}
+
+/* Título central */
+.text-overlay {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+  transition: transform 2s ease;
+  z-index: 2;
+}
+
+.text-overlay strong {
+  font-weight: bold;
+}
+
+/* Líneas del marco (borde) */
+.border-line {
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  transition: all 2s ease;
+}
+
+/* Borde superior e inferior */
+.border-line.top,
+.border-line.bottom {
+  height: 1px;
+  width: 2px;
+  left: 50%;
+}
+
+.border-line.top {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border-line.bottom {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Borde izquierdo y derecho */
+.border-line.left,
+.border-line.right {
+  width: 1px;
+  height: 0;
+  top: 50%;
+}
+
+.border-line.left {
+  position: absolute;
+  left: 90px;
+  transform: translateY(-50%);
+}
+
+.border-line.right {
+  position: absolute;
+  right: 90px;
+  transform: translateY(-50%);
+}
+
+/* Texto descriptivo */
+.description-box {
+  position: absolute;
+  bottom: 250px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+/* Hover: aplicar todos los efectos */
+.container:hover .overlay {
+  background-color: rgba(255, 32, 155, 0.475); /* rosa claro visible */
+}
+
+.container:hover .background {
+  transform: scale(0.95);
+}
+
+.container:hover .text-overlay {
+  transform: translateY(20px);
+}
+
+.container:hover .border-line.top,
+.container:hover .border-line.bottom {
+  width: 75%;
+  left: 50%;
+}
+
+.container:hover .border-line.left,
+.container:hover .border-line.right {
+  height: 65%;
+  top: 50%;
+
+}
+
+.container:hover .description-box {
+  opacity: 7;
+  transform: translateY(0);
+}

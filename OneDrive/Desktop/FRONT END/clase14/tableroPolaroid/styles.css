@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://img2.wallspic.com/previews/3/2/1/9/0/109123/109123-papel-fabrica-artes_creativas-arte-x750.jpg") no-repeat center center fixed;
+  background-size: cover; /* Hace que se ajuste a toda la pantalla */
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.polaroid {
+  background: linear-gradient(to top, #b3b6b6, #d4d7d5, #f8f9f5);
+  padding: 10px 10px 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(56, 56, 56, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  height: 200px;
+  opacity: 0.8;
+}
+
+.polaroid p {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Hover para agrandar */
+.polaroid:hover {
+  transform: scale(1.2) rotate(0deg);
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(80, 79, 79, 0.7);
+}
+
+/* Rotaciones alternas */
+.rotate-left {
+  transform: rotate(-7deg);
+}
+
+.rotate-right {
+  transform: rotate(7deg);
+}

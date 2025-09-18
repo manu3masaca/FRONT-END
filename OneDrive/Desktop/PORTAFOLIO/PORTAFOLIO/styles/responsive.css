@@ -1,7 +1,0 @@
-/* ================= css/responsive.css ================= */
-@media (max-width:50rem){
-.header-inner{flex-direction:column; gap:1rem;}
-.contact-layout{grid-template-columns:1fr;}
-.skills-grid,.projects-grid{grid-template-columns:1fr;}
-.hero h1{font-size:2rem;}
-}

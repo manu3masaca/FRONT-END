@@ -1,0 +1,11 @@
+/* ================= css/header.css ================= -- */
+.site-header{
+background:var(--panel);
+position:sticky; top:0; z-index:10;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:1rem;}
+.brand{font-weight:700; font-size:1.25rem; color:var(--accent);}
+.main-nav ul{list-style:none; margin:0; padding:0; display:flex; gap:var(--gap)}
+.main-nav a{padding:.5rem .75rem; border-radius:.5rem; transition:background var(--transition);}
+.main-nav a:hover,.main-nav a:focus{background:rgba(255,255,255,.06);}

@@ -1,0 +1,10 @@
+/* ================= css/projects.css ================= */
+.projects{background:var(--bg);}
+.projects h2{font-size:2rem; margin-bottom:1rem;}
+.projects-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); gap:var(--gap); margin-top:2rem;}
+.project-item{position:relative; display:block; overflow:hidden; border-radius:var(--radius);}
+.project-item img{display:block; width:100%; height:auto; transition:transform var(--transition);}
+.project-item .overlay{position:absolute; inset:0; background:rgba(0,0,0,.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity var(--transition); color:#fff;}
+.project-item:hover img{transform:scale(1.05);}
+.project-item:hover .overlay{opacity:1;}
+.cat{font-size:.8rem; text-transform:uppercase; color:var(--accent-2);}

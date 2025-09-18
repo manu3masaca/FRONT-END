@@ -1,0 +1,6 @@
+/* ================= css/hero.css ================= */
+.hero{padding:6rem 1rem; background:linear-gradient(160deg,var(--panel),#111827);}
+.hero h1{font-size:2.5rem; margin-bottom:1rem;}
+.lead{font-size:1.2rem; color:var(--muted); margin-bottom:2rem;}
+.hero-cta .btn{margin:.5rem; transition:transform var(--transition);}
+.hero-cta .btn:hover{transform:scale(1.05);}

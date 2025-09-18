@@ -1,0 +1,15 @@
+/* ================= css/contact.css ================= */
+.contact{background:var(--panel);}
+.contact-layout{display:grid; grid-template-columns:1fr 1fr; gap:var(--gap); align-items:start;}
+.contact-info{text-align:left;}
+.contact-links{margin-top:1.5rem;}
+.purple-link{color:var(--accent); display:inline-block; margin-right:1rem; transition:color var(--transition);}
+.purple-link:hover{color:var(--accent-2);}
+.socials{margin-top:1rem; display:flex; gap:1rem;}
+.social{font-size:1.5rem; color:var(--text); transition:color var(--transition);}
+.social:hover{color:var(--accent);}
+.contact-form{display:flex; flex-direction:column; gap:1rem; text-align:left;}
+.contact-form input,.contact-form textarea{padding:.75rem; border-radius:.5rem; border:1px solid rgba(255,255,255,.1); background:#1a202c; color:var(--text);}
+.contact-form input:focus,.contact-form textarea:focus{outline:2px solid var(--accent);}
+.checkbox-label{display:flex; align-items:center; gap:.5rem;}
+.form-actions{display:flex; gap:1rem; margin-top:1rem;}

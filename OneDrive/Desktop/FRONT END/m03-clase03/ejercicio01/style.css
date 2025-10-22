@@ -1,0 +1,28 @@
+/* 🌙 Modo oscuro y contenido centrado */
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button, a {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #121212;
+  background-color: #4fc3f7;
+  transition: 0.3s ease;
+}
+
+button:hover, a:hover {
+  background-color: #81d4fa;
+}

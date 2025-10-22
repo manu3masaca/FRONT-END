@@ -1,0 +1,44 @@
+/* 🌙 Modo oscuro y centrado */
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para cada div anidado */
+#abuelo, #padre, #hijo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Colores diferentes para distinguirlos visualmente */
+#abuelo {
+  background-color: #4fc3f7;
+  width: 300px;
+  height: 300px;
+}
+
+#padre {
+  background-color: #81d4fa;
+  width: 200px;
+  height: 200px;
+}
+
+#hijo {
+  background-color: #b3e5fc;
+  width: 100px;
+  height: 100px;
+  color: #121212;
+}

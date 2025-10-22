@@ -1,0 +1,27 @@
+/* 🌙 Modo oscuro y centrado */
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Texto informativo */
+p {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* Mensaje dinámico */
+#mensaje {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4fc3f7;
+  transition: 0.3s ease;
+}

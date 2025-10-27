@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limitando caracteres en textarea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Límite de caracteres</h1>
+
+    <!-- Textarea con límite de 150 caracteres -->
+    <label for="comentario">Escribe tu comentario (máx. 150 caracteres):</label>
+    <textarea id="comentario" rows="5" maxlength="150" placeholder="Empieza a escribir..."></textarea>
+
+    <!-- Contador dinámico -->
+    <p id="contador">150 caracteres restantes</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

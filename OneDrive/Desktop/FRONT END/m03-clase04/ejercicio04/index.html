@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección con radio y checkbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Selecciona tus preferencias</h1>
+
+    <!-- Formulario con radios y checkboxes -->
+    <form id="formulario">
+      
+      <!-- Opciones de color (solo una puede seleccionarse) -->
+      <fieldset>
+        <legend>Color favorito:</legend>
+        <label><input type="radio" name="color" value="Rojo"> Rojo</label>
+        <label><input type="radio" name="color" value="Azul"> Azul</label>
+        <label><input type="radio" name="color" value="Verde"> Verde</label>
+        <p class="error" id="errorColor"></p>
+      </fieldset>
+
+      <!-- Opciones de pasatiempos (pueden elegirse varias) -->
+      <fieldset>
+        <legend>Pasatiempos:</legend>
+        <label><input type="checkbox" name="pasatiempo" value="Leer"> Leer</label>
+        <label><input type="checkbox" name="pasatiempo" value="Viajar"> Viajar</label>
+        <label><input type="checkbox" name="pasatiempo" value="Deportes"> Deportes</label>
+        <p class="error" id="errorPasatiempos"></p>
+      </fieldset>
+
+      <!-- Botón de envío -->
+      <button type="submit">Mostrar selección</button>
+
+      <!-- Resultado -->
+      <p id="resultado"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Modo oscuro y contenido centrado */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Contenedor principal */
+main {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  width: 300px;
+}
+
+/* Inputs y botón */
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Mensajes de error */
+.error {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin: 0;
+  height: 16px; /* Mantiene el espacio reservado */
+}
+
+/* Mensaje de éxito */
+#exito {
+  margin-top: 15px;
+  color: #00ff7f;
+  font-weight: bold;
+}

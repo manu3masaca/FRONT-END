@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Validación de Datos</h1>
+
+    <!-- Formulario con email y contraseña -->
+    <form id="formulario">
+      
+      <!-- Campo de email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Ingresa tu correo" required>
+      <p class="error" id="errorEmail"></p>
+
+      <!-- Campo de contraseña -->
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" placeholder="Mínimo 6 caracteres" required>
+      <p class="error" id="errorPassword"></p>
+
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+
+      <!-- Mensaje de éxito -->
+      <p id="exito"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

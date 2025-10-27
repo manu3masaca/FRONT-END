@@ -1,0 +1,68 @@
+/* 🎨 Estilo general en modo oscuro y centrado */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* 🧱 Contenedor principal */
+main {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  width: 320px;
+}
+
+/* 🔘 Inputs y select */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 90%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+/* 🟢 Botón */
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* ❌ Mensaje de error */
+.error {
+  color: #ff4c4c;
+  font-size: 14px;
+  height: 18px;
+  margin-top: 4px;
+}
+
+/* 🧮 Resultado */
+#resultado {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffd700;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Calculadora simple</h1>
+
+    <!-- 🔢 Formulario de la calculadora -->
+    <form id="formCalculadora">
+      <label for="num1">Primer número:</label>
+      <input type="number" id="num1" placeholder="Ej: 8">
+
+      <label for="num2">Segundo número:</label>
+      <input type="number" id="num2" placeholder="Ej: 4">
+
+      <label for="operacion">Operación:</label>
+      <select id="operacion">
+        <option value="+">Sumar (+)</option>
+        <option value="-">Restar (-)</option>
+        <option value="*">Multiplicar (*)</option>
+        <option value="/">Dividir (/)</option>
+      </select>
+
+      <p id="errorCalc" class="error"></p>
+      <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Resultado mostrado sin recargar -->
+    <p id="resultado"></p>
+  </main>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario sin recarga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Captura de datos</h1>
+
+        <!-- Formulario con nombre y edad -->
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" placeholder="Ingresa tu edad" required>
+
+            <!-- Botón que enviará los datos -->
+            <button type="submit">Mostrar datos</button>
+        </form>
+
+        <!-- Aquí se mostrará el mensaje sin recargar -->
+        <div id="resultado"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

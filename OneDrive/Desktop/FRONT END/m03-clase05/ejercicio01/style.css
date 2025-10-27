@@ -1,0 +1,52 @@
+/* 🎨 Modo oscuro centrado */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* 🧱 Contenedor principal */
+main {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  width: 400px;
+}
+
+/* ❓ Botones de pregunta */
+.pregunta {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.pregunta:hover {
+  background-color: #3a3a3a;
+}
+
+/* 💬 Respuestas inicialmente ocultas */
+.respuesta {
+  display: none;
+  background-color: #252525;
+  margin: 0;
+  padding: 10px;
+  border-left: 3px solid #4caf50;
+  border-radius: 6px;
+  font-size: 15px;
+  text-align: left;
+}

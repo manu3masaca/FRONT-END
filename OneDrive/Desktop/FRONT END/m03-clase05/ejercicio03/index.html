@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal de Confirmación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Ejemplo de Modal de Confirmación</h1>
+
+    <!-- 🔘 Botón para abrir el modal -->
+    <button id="abrirModal">Mostrar Confirmación</button>
+
+    <!-- 🌑 Fondo oscuro del modal (overlay) -->
+    <section id="overlay" class="oculto">
+      
+      <!-- 📦 Contenido del modal -->
+      <section id="modal">
+        <h2>¿Estás segura?</h2>
+        <p>Esta acción no se puede deshacer.</p>
+        <button id="cerrarModal">Cerrar</button>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  -------------------------------------------------------
+  💬 Reflexiones:
+  -------------------------------------------------------
+  1. ¿Cómo puedes detectar el clic fuera del modal?
+     → Escuchando el evento click sobre el overlay y verificando que el clic no sea dentro del modal.
+
+  2. ¿Cómo puedes centrar un modal en pantalla?
+     → Usando position: fixed con transform: translate(-50%, -50%).
+
+  3. ¿Cómo puedes superponer el modal sobre todo el contenido?
+     → Usando z-index y un fondo oscuro semi-transparente (rgba).
+  -------------------------------------------------------
+  -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* 🎨 Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  background-color: #121212;
+  color: #f1f1f1;
+  margin: 0;
+  padding-top: 40px;
+}
+
+/* 🧱 Contenedor principal */
+main {
+  width: 90%;
+  max-width: 600px;
+}
+
+/* 🪗 Título del acordeón */
+.titulo {
+  width: 100%;
+  text-align: left;
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* 🌟 Efecto al pasar o activar */
+.titulo:hover, .titulo.activo {
+  background-color: #4caf50;
+}
+
+/* 📜 Contenido colapsable */
+.contenido {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+/* 📖 Cuando está activo, se expande */
+.contenido.mostrar {
+  padding: 15px;
+  max-height: 200px; /* altura máxima visible con animación */
+}

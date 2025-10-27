@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acordeón con Collapse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="oscuro">
+  <main>
+    <h1>Preguntas Frecuentes</h1>
+
+    <!-- 🪗 Sección 1 -->
+    <section class="acordeon">
+      <!-- Botón de título -->
+      <button class="titulo">¿Qué es un acordeón?</button>
+      <!-- Contenido colapsable -->
+      <p class="contenido">
+        Es un elemento que permite expandir o contraer información al hacer clic en su título.
+      </p>
+    </section>
+
+    <!-- 🪗 Sección 2 -->
+    <section class="acordeon">
+      <button class="titulo">¿Cómo funciona?</button>
+      <p class="contenido">
+        Cada título controla la visibilidad de su propio bloque de contenido, de forma independiente.
+      </p>
+    </section>
+
+    <!-- 🪗 Sección 3 -->
+    <section class="acordeon">
+      <button class="titulo">¿Se puede animar?</button>
+      <p class="contenido">
+        Sí, usando CSS y la propiedad max-height con una transición suave.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  -------------------------------------------------------
+  💬 Reflexiones:
+  -------------------------------------------------------
+  1. ¿Cómo se puede expandir una sola sección sin afectar las otras?
+     → Cada sección maneja su propio contenido con nextElementSibling.
+
+  2. ¿Cómo mejorar la UX?
+     → Agregar transición con max-height y un cambio de color en el botón activo.
+
+  3. ¿Qué alternativa hay a display: none?
+     → max-height: 0 permite animar suavemente la apertura y cierre.
+  -------------------------------------------------------
+  -->
+</body>
+</html>

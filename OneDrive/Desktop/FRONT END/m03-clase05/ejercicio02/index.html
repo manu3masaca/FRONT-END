@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Navegable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🔘 Botón para abrir/cerrar el sidebar -->
+  <button id="btnSidebar">☰ Menú</button>
+
+  <!-- 📂 Sidebar con enlaces -->
+  <nav id="sidebar">
+    <a href="#">Inicio</a>
+    <a href="#">Acerca de</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <h1>Bienvenida al sitio</h1>
+    <p>Haz clic en el botón de menú para abrir o cerrar la barra lateral.</p>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  -------------------------------------------------------
+  💬 Reflexiones:
+  -------------------------------------------------------
+  1. ¿Cómo puedes animar el cambio de ancho?
+     → Usando la propiedad CSS transition en el ancho del sidebar.
+
+  2. ¿Cómo puedes abrir y cerrar el menú con JavaScript?
+     → Alternando su estilo (width) entre 0 y 250px.
+
+  3. ¿Cómo podrías cerrarlo si se hace clic fuera del sidebar?
+     → Detectando el click en el documento y comprobando si no se hizo dentro del sidebar.
+  -------------------------------------------------------
+  -->
+</body>
+</html>

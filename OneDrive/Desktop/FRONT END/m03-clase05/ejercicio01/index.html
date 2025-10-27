@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Preguntas Frecuentes</h1>
+
+    <!-- 🔹 Cada pregunta es un botón que mostrará su respuesta -->
+    <section class="faq">
+      <button class="pregunta">¿Qué es JavaScript?</button>
+      <p class="respuesta">Es un lenguaje de programación que permite agregar interactividad a las páginas web.</p>
+
+      <button class="pregunta">¿Qué es el DOM?</button>
+      <p class="respuesta">El DOM (Document Object Model) representa la estructura del documento HTML en forma de árbol, y puede ser manipulado con JavaScript.</p>
+
+      <button class="pregunta">¿Qué hace CSS?</button>
+      <p class="respuesta">CSS se utiliza para definir la apariencia y el diseño visual de los elementos HTML.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  -------------------------------------------------------
+  💬 Reflexiones:
+  -------------------------------------------------------
+  1. ¿Cómo puedes detectar cada clic en una pregunta?
+     → Usando addEventListener("click") sobre cada botón.
+
+  2. ¿Cómo puedes acceder a la respuesta relacionada?
+     → Usando nextElementSibling para obtener el párrafo siguiente.
+
+  3. ¿Cómo puedes mostrar u ocultar la respuesta?
+     → Alternando su propiedad style.display entre "none" y "block".
+  -------------------------------------------------------
+  -->
+</body>
+</html>

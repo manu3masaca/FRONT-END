@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Modo Claro/Oscuro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="oscuro">
+  <main>
+    <h1>Cambiar Tema</h1>
+    <p>Haz clic en el botón para alternar entre el modo claro y oscuro.</p>
+
+    <!-- 🔘 Botón para alternar el modo -->
+    <button id="toggleTema">Cambiar a modo claro 🌞</button>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!--
+  -------------------------------------------------------
+  💬 Reflexiones:
+  -------------------------------------------------------
+  1. ¿Cómo puedes alternar entre clases CSS?
+     → Usando classList.toggle() para añadir o quitar la clase del modo.
+
+  2. ¿Cómo puedes actualizar el texto del botón según el estado?
+     → Comprobando si el body contiene la clase "oscuro" y cambiando su textContent.
+
+  3. ¿Cómo podrías mantener el modo seleccionado aunque se recargue la página?
+     → Guardando la preferencia en localStorage y recuperándola al cargar el sitio.
+  -------------------------------------------------------
+  -->
+</body>
+</html>

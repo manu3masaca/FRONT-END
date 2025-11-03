@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>📝 Mi To-Do App</h1>
+
+  <!-- Contenedor general -->
+  <main class="contenedor">
+
+    <!-- Sidebar para filtrar -->
+    <aside class="sidebar">
+      <h2>📂 Categorías</h2>
+      <ul>
+        <li data-categoria="Todas">Todas las tareas</li>
+        <li data-categoria="Trabajo">Trabajo</li>
+        <li data-categoria="Estudio">Estudio</li>
+        <li data-categoria="Personal">Personal</li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <section class="principal">
+      <!-- Formulario para agregar tareas -->
+      <form id="formulario">
+        <input type="text" id="tarea" placeholder="Escribe una tarea">
+        <select id="categoria">
+          <option value="Trabajo">Trabajo</option>
+          <option value="Estudio">Estudio</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+
+      <!-- Contenedor de tareas -->
+      <section id="lista-tareas"></section>
+
+      <!-- Botón para borrar todas -->
+      <button id="borrar-todo" class="borrar">Borrar todas las tareas</button>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

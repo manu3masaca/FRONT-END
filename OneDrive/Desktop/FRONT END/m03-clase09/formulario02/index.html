@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📝 Registro con Íconos</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+  <!-- Íconos de Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ===========================
+       CONTENEDOR PRINCIPAL
+  ============================ -->
+  <main class="section">
+    <div class="container has-text-centered">
+      <h1 class="title is-2 has-text-primary-light">Registro de Usuario</h1>
+      <p class="subtitle is-5 has-text-grey-light">Crea tu cuenta y personalízala 🪄</p>
+    </div>
+
+    <!-- ===========================
+         FORMULARIO
+    ============================ -->
+    <form method="POST" class="box has-background-dark mt-5" id="formRegistro">
+
+      <!-- Campo: Nombre completo -->
+      <div class="field">
+        <label class="label has-text-light" for="nombre">Nombre completo</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" id="nombre" name="nombre" placeholder="Ej: Ana Pérez" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Campo: Correo electrónico -->
+      <div class="field">
+        <label class="label has-text-light" for="correo">Correo electrónico</label>
+        <div class="control has-icons-left">
+          <input class="input" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Campo: Contraseña -->
+      <div class="field">
+        <label class="label has-text-light" for="contrasena">Contraseña</label>
+        <div class="control has-icons-left">
+          <input class="input" type="password" id="contrasena" name="contrasena" placeholder="Crea una contraseña" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Campo: Confirmar contraseña -->
+      <div class="field">
+        <label class="label has-text-light" for="confirmar">Confirmar contraseña</label>
+        <div class="control has-icons-left">
+          <input class="input" type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-check-circle"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Campo: Descripción personal -->
+      <div class="field">
+        <label class="label has-text-light" for="descripcion">Descripción personal</label>
+        <div class="control has-icons-left">
+          <textarea class="textarea" id="descripcion" name="descripcion" placeholder="Cuéntanos un poco sobre ti..."></textarea>
+          <span class="icon is-small is-left">
+            <i class="fas fa-comment-dots"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Botón de envío -->
+      <div class="field has-text-centered mt-5">
+        <button type="submit" class="button is-primary is-medium is-rounded">
+          <i class="fas fa-paper-plane mr-2"></i> Registrar
+        </button>
+      </div>
+
+    </form>
+  </main>
+</body>
+</html>

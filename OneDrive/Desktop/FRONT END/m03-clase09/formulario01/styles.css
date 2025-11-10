@@ -1,0 +1,39 @@
+/* ===========================
+   MODO OSCURO Y ESTILO GENERAL
+=========================== */
+body {
+  background-color: #0a0a0a;
+  color: #f0e6d2;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Centrar y limitar el ancho del formulario */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 204, 112, 0.3);
+}
+
+/* Inputs y textarea personalizados */
+.input, .textarea {
+  background-color: #1a1a1a;
+  color: #f0e6d2;
+  border: 1px solid #ffcc70;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #ffcc70;
+  box-shadow: 0 0 5px rgba(255, 204, 112, 0.4);
+}
+
+/* Botón */
+.button {
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}

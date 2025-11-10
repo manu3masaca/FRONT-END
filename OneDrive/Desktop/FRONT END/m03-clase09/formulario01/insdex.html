@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📝 Registro de Usuario</title>
+
+  <!-- Enlace a Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ===========================
+       CONTENEDOR PRINCIPAL
+  ============================ -->
+  <main class="section">
+    <div class="container has-text-centered">
+      <h1 class="title is-2 has-text-warning">Formulario de Registro</h1>
+      <p class="subtitle is-5 has-text-grey-light">Crea tu cuenta y únete a nuestra comunidad 🌟</p>
+    </div>
+
+    <!-- ===========================
+         FORMULARIO
+    ============================ -->
+    <form method="POST" class="box has-background-dark mt-5" id="formRegistro">
+      
+      <!-- Campo: Nombre completo -->
+      <div class="field">
+        <label class="label has-text-light" for="nombre">Nombre completo</label>
+        <div class="control">
+          <input class="input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+        </div>
+      </div>
+
+      <!-- Campo: Correo electrónico -->
+      <div class="field">
+        <label class="label has-text-light" for="correo">Correo electrónico</label>
+        <div class="control">
+          <input class="input" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+      </div>
+
+      <!-- Campo: Contraseña -->
+      <div class="field">
+        <label class="label has-text-light" for="contrasena">Contraseña</label>
+        <div class="control">
+          <input class="input" type="password" id="contrasena" name="contrasena" placeholder="Crea una contraseña" required>
+        </div>
+      </div>
+
+      <!-- Campo: Confirmar contraseña -->
+      <div class="field">
+        <label class="label has-text-light" for="confirmar">Confirmar contraseña</label>
+        <div class="control">
+          <input class="input" type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" required>
+        </div>
+      </div>
+
+      <!-- Campo: Descripción (extra) -->
+      <div class="field">
+        <label class="label has-text-light" for="descripcion">Descripción personal</label>
+        <div class="control">
+          <textarea class="textarea" id="descripcion" name="descripcion" placeholder="Cuéntanos un poco sobre ti..."></textarea>
+        </div>
+      </div>
+
+      <!-- Botón de envío -->
+      <div class="field has-text-centered mt-5">
+        <button type="submit" class="button is-warning is-medium is-rounded">
+          🚀 Registrar
+        </button>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📬 Contacto | Fortuna</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+  <!-- Íconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===========================
+       NAVBAR PRINCIPAL
+  ============================ -->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo" width="32" height="32">
+        <span class="ml-2 has-text-weight-bold has-text-light">Fortuna</span>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="menuPrincipal" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">Inicio</a>
+        <a class="navbar-item">Horóscopo</a>
+        <a class="navbar-item">Acerca de</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a class="button is-primary">
+            <i class="fas fa-sign-in-alt mr-2"></i> Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===========================
+       SECCIÓN DEL FORMULARIO
+  ============================ -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Título centrado -->
+      <div class="has-text-centered mb-6">
+        <h1 class="title has-text-primary-light">Contáctanos 🌠</h1>
+        <p class="subtitle has-text-grey-light">Déjanos un mensaje y te responderemos pronto</p>
+      </div>
+
+      <!-- ===========================
+           SISTEMA DE COLUMNAS
+      ============================ -->
+      <div class="columns is-centered">
+        <div class="column is-half">
+          
+          <!-- Caja del formulario -->
+          <form class="box has-background-dark" method="POST">
+            
+            <!-- Campo: Nombre -->
+            <div class="field">
+              <label class="label has-text-light" for="nombre">Nombre completo</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Campo: Email -->
+            <div class="field">
+              <label class="label has-text-light" for="email">Correo electrónico</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Campo: Mensaje -->
+            <div class="field">
+              <label class="label has-text-light" for="mensaje">Mensaje</label>
+              <div class="control has-icons-left">
+                <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-comment-dots"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Botón de envío -->
+            <div class="field has-text-centered mt-5">
+              <button type="submit" class="button is-primary is-medium is-rounded">
+                <i class="fas fa-paper-plane mr-2"></i> Enviar Mensaje
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       SCRIPT PARA EL BURGER MENU
+  ============================ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

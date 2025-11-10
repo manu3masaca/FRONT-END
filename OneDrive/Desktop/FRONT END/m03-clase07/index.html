@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Rueda Zodiacal de la Fortuna ✨</title>
+
+  <!-- Enlace a Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+  <!-- Fuente decorativa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Enlace a CSS personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- ===========================
+       ENCABEZADO PRINCIPAL
+  ============================ -->
+  <header class="has-text-centered mt-6">
+    <h1 class="title is-1 has-text-warning">🔮 Rueda Zodiacal de la Fortuna 🔮</h1>
+    <p class="subtitle is-4 has-text-grey-light">Descubre lo que el universo tiene preparado para ti</p>
+  </header>
+
+  <!-- ===========================
+       SISTEMA DE COLUMNAS
+  ============================ -->
+  <section class="section">
+    <div class="columns is-vcentered">
+      
+      <!-- Columna texto -->
+      <article class="column has-text-centered">
+        <p class="content is-medium">
+          Cada signo del zodiaco posee una energía única.  
+          Haz clic sobre tu signo en la rueda y deja que la fortuna te revele un mensaje especial del cosmos .
+        </p>
+      </article>
+
+      <!-- Columna imagen -->
+      <figure class="column image is-10 is-inline-block has-text-centered">
+        <img src="https://png.pngtree.com/background/20230517/original/pngtree-zodiac-wheel-with-different-symbols-on-it-picture-image_2638455.jpg" alt="Rueda zodiacal">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===========================
+       RUEDA DE SIGNOS INTERACTIVA
+  ============================ -->
+  <section class="rueda">
+    <button class="signo" onclick="mostrarSigno('Aries')">♈ Aries</button>
+    <button class="signo" onclick="mostrarSigno('Tauro')">♉ Tauro</button>
+    <button class="signo" onclick="mostrarSigno('Géminis')">♊ Géminis</button>
+    <button class="signo" onclick="mostrarSigno('Cáncer')">♋ Cáncer</button>
+    <button class="signo" onclick="mostrarSigno('Leo')">♌ Leo</button>
+    <button class="signo" onclick="mostrarSigno('Virgo')">♍ Virgo</button>
+    <button class="signo" onclick="mostrarSigno('Libra')">♎ Libra</button>
+    <button class="signo" onclick="mostrarSigno('Escorpio')">♏ Escorpio</button>
+    <button class="signo" onclick="mostrarSigno('Sagitario')">♐ Sagitario</button>
+    <button class="signo" onclick="mostrarSigno('Capricornio')">♑ Capricornio</button>
+    <button class="signo" onclick="mostrarSigno('Acuario')">♒ Acuario</button>
+    <button class="signo" onclick="mostrarSigno('Piscis')">♓ Piscis</button>
+  </section>
+
+  <!-- ===========================
+       TARJETA DE INFORMACIÓN
+  ============================ -->
+  <section id="tarjeta-info" class="card has-background-dark has-text-light is-hidden">
+    <figure class="card-image">
+      <img id="img-signo" src="" alt="Signo zodiacal">
+    </figure>
+    <div class="card-content has-text-centered">
+      <h2 id="titulo-signo" class="title is-4 has-text-warning"></h2>
+      <p id="descripcion-signo" class="content"></p>
+    </div>
+  </section>
+
+  <!-- ===========================
+       BOTÓN DE REINICIO
+  ============================ -->
+  <footer class="has-text-centered mb-6">
+    <button class="button is-medium is-rounded mt-4" onclick="reiniciar()">
+      🔁 Ver otro signo
+    </button>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+

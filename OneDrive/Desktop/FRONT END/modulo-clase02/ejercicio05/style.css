@@ -1,0 +1,79 @@
+/* 🌙 Modo oscuro y centrado */
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  width: 350px;
+}
+
+/* Formulario */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+button {
+  background-color: #4fc3f7;
+  color: #121212;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #81d4fa;
+}
+
+/* Zona donde aparecerán las tarjetas */
+.zona-tarjetas {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+  background-color: #2b2b2b;
+  border: 2px solid #4fc3f7;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta h2 {
+  color: #81d4fa;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  color: #ccc;
+}

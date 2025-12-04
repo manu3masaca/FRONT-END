@@ -1,0 +1,56 @@
+<!-- LA ACTIVIDAD – GUION DE LA MISMA:
+Actividad Práctica: Crear una Landing Page Responsiva
+Duración estimada: 1 hora y 30 minutos
+Objetivo: Aplicar los conceptos teóricos de diseño responsivo y adaptativo, unidades relativas, layout dinámico,
+imágenes responsivas y meta viewport en un proyecto práctico.
+________________________________________
+Introducción (5 minutos)
+Explicación breve al inicio de la clase:
+•	Presentar el objetivo: diseñar una landing page simple pero completamente responsiva.
+•	Recordar los conceptos básicos y su relación con la actividad:
+o	Diseño responsivo vs adaptativo.
+o	Mobile First.
+o	Uso de unidades (%, vw, vh, em, rem).
+o	Media queries y breakpoints.
+o	Meta viewport.
+________________________________________
+Descripción de la Actividad
+Crear una landing page con los siguientes componentes:
+1.	Header con una imagen de fondo que ocupe toda la altura visible del dispositivo (100vh).
+2.	Sección principal con un texto centrado, utilizando rem para el tamaño de la fuente.
+3.	Galería de imágenes que se ajuste a diferentes tamaños de pantalla utilizando grid.
+4.	Footer fijo en la parte inferior con información básica. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Explora nuestra galería y descubre contenido único.</p>
+        </section>
+
+        <section class="gallery">
+            <img src="https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg" alt="Imagen 1">
+            <img src="https://images.pexels.com/photos/26793959/pexels-photo-26793959.png" alt="Imagen 2">
+            <img src="https://images.pexels.com/photos/33505260/pexels-photo-33505260.jpeg" alt="Imagen 3">
+            <img src="https://images.pexels.com/photos/33448843/pexels-photo-33448843.jpeg" alt="Imagen 4">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Mi Landing Page Responsiva.</p>
+
+    </footer>
+</body>
+</html>
+

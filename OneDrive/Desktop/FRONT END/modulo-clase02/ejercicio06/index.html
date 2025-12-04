@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Tarjetas Dinámicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div class="contenedor">
+    <h1>Generador de Tarjetas</h1>
+
+    <!-- Formulario para crear nuevas tarjetas -->
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="descripcion" placeholder="Descripción">
+      <button type="submit">Crear Tarjeta</button>
+    </form>
+
+    <!-- Botón adicional para eliminar la última tarjeta -->
+    <button id="btnEliminar" class="btn-eliminar">Eliminar Última Tarjeta</button>
+
+    <!-- Zona donde aparecerán las tarjetas -->
+    <div id="zonaTarjetas" class="zona-tarjetas"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

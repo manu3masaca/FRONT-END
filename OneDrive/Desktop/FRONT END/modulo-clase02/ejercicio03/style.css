@@ -1,0 +1,45 @@
+/* Modo oscuro y centrado */
+body {
+  background-color: #121212;
+  color: #eaeaea;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Div de texto */
+#texto {
+  margin-bottom: 20px;
+  background-color: #2b2b2b;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Botones */
+button {
+  background-color: #4fc3f7;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #81d4fa;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>searchParams - Filtrar Posts</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        Buscar posts por usuario
+      </h1>
+
+      <p class="mb-4">
+        Ingresa el ID del usuario
+      </p>
+
+      <!-- Campo de texto y botón -->
+      <div class="field has-addons has-addons-centered mb-5">
+        <div class="control">
+          <input
+            id="userIdInput"
+            class="input"
+            type="number"
+            placeholder="Ej: 3"
+            min="1"
+          >
+        </div>
+        <div class="control">
+          <button id="btnBuscar" class="button is-link">
+            Buscar
+          </button>
+        </div>
+      </div>
+
+      <!-- Lista de resultados -->
+      <ul id="listaPosts"></ul>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

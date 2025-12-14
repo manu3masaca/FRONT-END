@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtros Múltiples - Posts</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        Filtros múltiples con searchParams
+      </h1>
+
+      <p class="mb-5">
+        Filtrar posts por usuario y ordenarlos por título
+      </p>
+
+      <!-- Filtros -->
+      <div class="columns is-centered mb-4">
+
+        <!-- userId -->
+        <div class="column is-3">
+          <input
+            id="userIdInput"
+            class="input"
+            type="number"
+            placeholder="ID Usuario (ej: 1)"
+            min="1"
+          >
+        </div>
+
+        <!-- Orden -->
+        <div class="column is-3">
+          <div class="select is-fullwidth">
+            <select id="orderSelect">
+              <option value="asc">Título A–Z</option>
+              <option value="desc">Título Z–A</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="column is-2">
+          <button id="btnBuscar" class="button is-link is-fullwidth">
+            Buscar
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Resultados -->
+      <ul id="listaPosts"></ul>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

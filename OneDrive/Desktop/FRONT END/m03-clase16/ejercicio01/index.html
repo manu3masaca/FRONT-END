@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploración API - JSONPlaceholder</title>
+
+  <!-- ===================== -->
+  <!-- Estilos básicos       -->
+  <!-- Modo oscuro           -->
+  <!-- ===================== -->
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: 800px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 0.5rem;
+    }
+
+    th {
+      background-color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>📘 Exploración de Documentación de API</h1>
+
+    <!-- ====================================================== -->
+    <!-- API SELECCIONADA: JSONPlaceholder                       -->
+    <!-- URL BASE: https://jsonplaceholder.typicode.com          -->
+    <!-- ====================================================== -->
+
+    <!--
+      ¿Qué endpoints ofrece para obtener colecciones?
+
+      La API JSONPlaceholder ofrece las siguientes colecciones:
+      - /posts        → publicaciones
+      - /comments     → comentarios
+      - /users        → usuarios
+      - /albums       → álbumes
+      - /photos       → fotos
+      - /todos        → tareas
+    -->
+
+    <!--
+      ¿Qué métodos HTTP soporta cada endpoint?
+
+      Para la mayoría de los recursos, JSONPlaceholder soporta:
+      - GET    → obtener recursos
+      - POST   → crear recursos
+      - PUT    → actualizar un recurso completo
+      - PATCH  → actualizar parcialmente un recurso
+      - DELETE → eliminar un recurso
+
+      ⚠️ Importante:
+      Aunque acepta POST, PUT, PATCH y DELETE, la API es de prueba
+      y no guarda los cambios realmente.
+    -->
+
+    <!--
+      ¿Qué parámetros de búsqueda permite?
+
+      JSONPlaceholder permite:
+
+      🔍 Filtros:
+      - ?userId=1          → filtrar por usuario
+      - ?postId=10         → filtrar comentarios de un post
+
+      📄 Paginado / límite:
+      - ?_limit=10         → limitar resultados
+      - ?_page=2           → paginar resultados
+
+      🔎 Ordenamiento:
+      - No soporta ordenamiento avanzado real,
+        pero se puede simular del lado del cliente.
+    -->
+
+    <!-- ====================================================== -->
+    <!-- TABLA RESUMEN DE LA DOCUMENTACIÓN                       -->
+    <!-- ====================================================== -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Endpoint</th>
+          <th>Recurso</th>
+          <th>Métodos HTTP</th>
+          <th>Parámetros permitidos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/posts</td>
+          <td>Publicaciones</td>
+          <td>GET, POST, PUT, PATCH, DELETE</td>
+          <td>?userId, ?_limit, ?_page</td>
+        </tr>
+        <tr>
+          <td>/comments</td>
+          <td>Comentarios</td>
+          <td>GET, POST</td>
+          <td>?postId, ?_limit</td>
+        </tr>
+        <tr>
+          <td>/users</td>
+          <td>Usuarios</td>
+          <td>GET</td>
+          <td>No aplica</td>
+        </tr>
+        <tr>
+          <td>/albums</td>
+          <td>Álbumes</td>
+          <td>GET</td>
+          <td>?userId</td>
+        </tr>
+        <tr>
+          <td>/photos</td>
+          <td>Fotos</td>
+          <td>GET</td>
+          <td>?albumId, ?_limit</td>
+        </tr>
+        <tr>
+          <td>/todos</td>
+          <td>Tareas</td>
+          <td>GET, POST, PUT, PATCH, DELETE</td>
+          <td>?userId</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+</body>
+</html>
+```
+
+
+
+

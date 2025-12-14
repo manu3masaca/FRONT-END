@@ -1,0 +1,43 @@
+/* ===================== */
+/* Estilos generales */
+/* ===================== */
+
+
+body {
+background-color: #121212;
+color: #ffffff;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+}
+
+
+main {
+width: 600px;
+text-align: center;
+}
+
+
+form, ul {
+margin-top: 1rem;
+}
+
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+
+li {
+background-color: #1e1e1e;
+margin: 0.5rem 0;
+padding: 0.5rem;
+}
+
+
+input, button {
+width: 100%;
+padding: 0.5rem;
+margin-top: 0.5rem;
+}

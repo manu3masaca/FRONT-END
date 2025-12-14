@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Paginado en Front End</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        Paginado simulado de Posts
+      </h1>
+
+      <p class="mb-4">
+        Mostrando bloques de 10 posts
+      </p>
+
+      <!-- Lista de posts -->
+      <ul id="listaPosts" class="mb-5"></ul>
+
+      <!-- Botones de paginado -->
+      <div class="buttons is-centered">
+        <button id="btnAnterior" class="button is-link is-light">
+          Anterior
+        </button>
+
+        <button id="btnSiguiente" class="button is-link">
+          Siguiente
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

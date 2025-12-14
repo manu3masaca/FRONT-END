@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Colecciones vs Recursos - PokeAPI</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+</head>
+
+<body class="has-background-light">
+
+  <section class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">
+        PokeAPI: Colecciones vs Recurso Individual
+      </h1>
+
+      <p class="mb-5">
+        Abre la consola para ver las respuestas
+      </p>
+
+      <div class="buttons is-centered">
+        <button id="btnColeccion" class="button is-link">
+          Obtener colección de Pokémon
+        </button>
+
+        <button id="btnRecurso" class="button is-primary">
+          Obtener Pokémon específico (ID 5)
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  <!--
+  ======================================================
+  DIFERENCIAS: COLECCIONES vs RECURSOS INDIVIDUALES
+  ======================================================
+
+  Aspecto            | Colección (/pokemon)            | Recurso Individual (/pokemon/{id})
+  -------------------|----------------------------------|-----------------------------------
+  Cantidad           | Múltiples recursos               | Un solo recurso
+  Tamaño             | Respuesta liviana                | Respuesta más pesada
+  Nivel de detalle   | Información básica (name, url)   | Información completa del Pokémon
+  Estructura         | Objeto con array "results"       | Objeto JSON detallado
+  Paginación         | Sí (count, next, previous)       | No
+  Uso común          | Listados de Pokémon              | Vista detallada de un Pokémon
+
+  
+  ======================================================
+  -->

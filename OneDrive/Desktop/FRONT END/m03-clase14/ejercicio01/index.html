@@ -1,0 +1,44 @@
+DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Biblioteca REST</title>
+
+<!-- Archivo CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<h1>📚 Biblioteca</h1>
+
+<!-- Sección: listado de libros -->
+<section>
+<h2>Libros disponibles</h2>
+<ul id="lista-libros"></ul>
+</section>
+
+
+<!-- Sección: detalle del libro -->
+<section>
+<h2>Detalle del libro</h2>
+<article id="detalle-libro"></article>
+</section>
+
+<!-- Sección: reseñas -->
+<section>
+<h2>Reseñas</h2>
+<ul id="lista-resenas"></ul>
+
+<!-- Formulario simple para agregar reseña -->
+<form id="form-resena">
+<input type="text" id="autor" placeholder="Autor" required>
+<textarea id="comentario" placeholder="Comentario" required></textarea>
+<button type="submit">Agregar reseña</button>
+</form>
+</section>
+</main>
+
+<!-- Archivo JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

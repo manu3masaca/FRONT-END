@@ -1,0 +1,25 @@
+/* ===================== */
+/* Estilos generales */
+/* ===================== */
+
+
+body {
+background-color: #121212;
+color: #ffffff;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+}
+
+
+main {
+width: 500px;
+text-align: center;
+}
+
+
+button, input {
+width: 100%;
+padding: 0.5rem;
+margin-top: 0.5rem;
+}

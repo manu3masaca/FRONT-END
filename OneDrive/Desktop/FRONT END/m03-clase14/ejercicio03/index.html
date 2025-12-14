@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Blog Simple</title>
+
+
+<!-- ===================== -->
+<!-- Estilos-->
+<!-- ===================== -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<h1>📝 Blog</h1>
+
+<!-- ===================== -->
+<!-- Publicación existente -->
+<!-- ===================== -->
+<article>
+<h2 id="titulo-post">Título original del post</h2>
+<button id="btn-editar">Editar título</button>
+</article>
+
+
+<!-- ===================== -->
+<!-- Formulario de edición -->
+<!-- ===================== -->
+<form id="form-editar" hidden>
+<input type="text" id="nuevo-titulo" placeholder="Nuevo título" required>
+<button type="submit">Guardar cambios</button>
+</form>
+
+
+<p id="mensaje"></p>
+
+
+<!-- ===================================================== -->
+<!-- FLUJO CLIENTE - SERVIDOR (EXPLICACIÓN PASO A PASO) -->
+<!-- ===================================================== -->
+
+<!--
+1️⃣ El usuario hace clic en "Editar título".
+- Esto es una acción del lado del cliente (front-end).
+- Se muestra un formulario para modificar el título.
+
+2️⃣ El usuario escribe un nuevo título y envía el formulario.
+- El front-end captura el evento submit con JavaScript.
+
+3️⃣ Método HTTP utilizado:
+- PATCH (porque se actualiza solo un campo del recurso).
+
+4️⃣ URI construida:
+- /api/posts/15
+- "posts" representa la colección.
+- "15" identifica la publicación a editar.
+
+5️⃣ Datos enviados al servidor (body de la petición):
+{
+"titulo": "Nuevo título del post"
+}
+
+6️⃣ El servidor procesa la solicitud y responde:
+- 200 OK → El título se actualizó correctamente.
+- 400 Bad Request → Datos inválidos.
+- 404 Not Found → El post no existe.
+- 500 Internal Server Error → Error inesperado.
+
+7️⃣ Manejo de la respuesta en la interfaz:
+- 200 → Se actualiza el título en pantalla y se muestra mensaje de éxito.
+- 400 / 404 → Se muestra un mensaje de error al usuario.
+- 500 → Se informa que ocurrió un error del servidor.
+
+8️⃣ La interfaz se actualiza sin recargar la página,
+manteniendo una experiencia fluida para el usuario.
+-->
+
+</main>
+
+<!-- ===================== -->
+<!-- Lógica JavaScript -->
+<!-- ===================== -->
+<script src="script.js"></script>
+</body>
+</html>

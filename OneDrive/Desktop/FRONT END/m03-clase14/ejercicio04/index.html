@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Perfil de Usuario</title>
+
+
+<!-- ===================== -->
+<!-- Estilos -->
+<!-- ===================== -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<main>
+
+<!-- =============================== -->
+<!-- TARJETA DE PERFIL DE USUARIO -->
+<!-- =============================== -->
+<!--
+ESQUEMA VISUAL DEL PERFIL
+
+
+La API devuelve el siguiente JSON:
+{
+"id": 101,
+"nombre": "Ana López",
+"email": "ana@example.com",
+"ultimo_acceso": "2023-10-05"
+}
+
+Organización visual en la interfaz:
+
+🟦 Contenedor principal (tarjeta)
+├── Nombre del usuario (texto destacado / título)
+│ → Campo usado: nombre
+│ → Se muestra en grande para identificar al usuario
+│
+├── Correo electrónico (texto normal)
+│ → Campo usado: email
+│ → Se muestra como información de contacto
+│
+├── Último acceso (texto secundario)
+│ → Campo usado: ultimo_acceso
+│ → Se muestra en un estilo más sutil
+│
+└── ID del usuario (dato técnico)
+→ Campo usado: id
+→ Puede mostrarse pequeño o en el pie de la tarjeta
+
+
+Tipo de presentación:
+✔ Tarjeta centrada
+✔ Nombre destacado
+✔ Información ordenada verticalmente
+-->
+
+<section class="card">
+<h2 id="nombre">Ana López</h2>
+<p><strong>Email:</strong> <span id="email">ana@example.com</span></p>
+<p class="secundario">Último acceso: <span id="ultimo-acceso">2023-10-05</span></p>
+<p class="id">ID usuario: <span id="id">101</span></p>
+</section>
+
+</main>
+
+<!-- JavaScript opcional para cargar datos -->
+<script src="script.js"></script>
+</body>
+</html>

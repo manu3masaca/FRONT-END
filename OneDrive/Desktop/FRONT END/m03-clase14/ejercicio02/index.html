@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Práctica HTTP</title>
+<!-- 
+📌 Análisis de escenarios
+🧑‍💻 1. Un usuario envía un formulario de registro
+Método HTTP: POST
+Código de estado probable: 201 Created
+Respuesta en la interfaz:
+Mensaje de éxito: "Usuario registrado correctamente"
+Limpieza del formulario
+
+🗑️ 2. C intenta eliminar un producto que no existe
+Método HTTP: DELETE
+Código de estado probable: 404 Not Found
+Respuesta en la interfaz:
+Alerta de error: "El producto no existe"
+
+✉️ 3. C actualiza el correo electrónico de un perfil
+Método HTTP: PATCH
+Código de estado probable: 200 OK
+Respuesta en la interfaz:
+Mensaje de éxito indicando que el correo fue actualizado
+
+📦 4. C solicita la lista de pedidos recientes
+Método HTTP: GET
+Código de estado probable: 200 OK
+Respuesta en la interfaz:
+Mostrar listado de pedidos en pantalla -->
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<h1>🌐 Práctica Métodos HTTP</h1>
+
+
+<!-- Registro de usuario -->
+<section>
+<h2>Registro</h2>
+<form id="form-registro">
+<input type="email" id="email" placeholder="Correo" required>
+<button type="submit">Registrar</button>
+</form>
+<p id="msg-registro"></p>
+</section>
+
+
+<!-- Eliminar producto -->
+<section>
+<h2>Eliminar producto</h2>
+<button id="eliminar-producto">Eliminar producto inexistente</button>
+<p id="msg-eliminar"></p>
+</section>
+
+
+<!-- Actualizar perfil -->
+<section>
+<h2>Actualizar correo</h2>
+<button id="actualizar-correo">Actualizar correo</button>
+<p id="msg-actualizar"></p>
+</section>
+
+
+<!-- Listar pedidos -->
+<section>
+<h2>Pedidos recientes</h2>
+<button id="ver-pedidos">Ver pedidos</button>
+<ul id="lista-pedidos"></ul>
+</section>
+</main>
+
+
+<!-- JavaScript-->
+<script src="script.js"></script>
+</body>
+</html>

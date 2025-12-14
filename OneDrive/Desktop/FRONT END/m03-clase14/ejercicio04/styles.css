@@ -1,0 +1,43 @@
+/* ===================== */
+/* Estilos generales */
+/* ===================== */
+
+
+body {
+background-color: #121212;
+color: #ffffff;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+}
+
+
+main {
+margin-top: 3rem;
+}
+
+
+/* ===================== */
+/* Tarjeta de perfil */
+/* ===================== */
+
+
+.card {
+background-color: #1e1e1e;
+padding: 2rem;
+border-radius: 8px;
+width: 350px;
+text-align: center;
+}
+
+
+.secundario {
+color: #bbbbbb;
+}
+
+
+.id {
+margin-top: 1rem;
+font-size: 0.8rem;
+color: #888888;
+}

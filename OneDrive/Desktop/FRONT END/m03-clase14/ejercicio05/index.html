@@ -1,0 +1,73 @@
+<!-- ====================================================== -->
+<!-- ANÁLISIS DE ERRORES EN URIs Y MÉTODOS HTTP -->
+<!-- ====================================================== -->
+
+
+<!--
+1️⃣ GET /obtenerUsuario/25
+
+❌ Error:
+- La URI contiene un verbo ("obtener").
+- En REST, las URIs deben representar recursos, no acciones.
+✅ Corrección:
+- Usar un sustantivo en plural.
+- El método HTTP ya indica la acción.
+
+✔ URI correcta:
+GET /usuarios/25
+-->
+
+<!--
+2️⃣ POST /actualizarProducto/10
+
+❌ Errores:
+- Se usa un verbo ("actualizar") en la URI.
+- POST no es el método más adecuado para actualizar.
+✅ Corrección:
+- Usar PUT o PATCH según el tipo de actualización.
+- Mantener la URI como un recurso.
+
+✔ URI correcta:
+PATCH /productos/10
+(o PUT /productos/10 si se reemplaza todo el recurso)
+-->
+
+<!--
+3️⃣ DELETE /usuarios?userId=5
+
+❌ Error:
+- El ID del recurso se envía como query parameter.
+- En REST, los IDs deben formar parte de la URI.
+✅ Corrección:
+- Representar el recurso de forma jerárquica.
+
+✔ URI correcta:
+DELETE /usuarios/5
+-->
+
+<!--
+4️⃣ GET /libros/ciencia-ficcion (para filtrar por género)
+
+❌ Error:
+- El género se trata como si fuera un subrecurso fijo.
+- Esto limita la flexibilidad de filtros.
+✅ Corrección:
+- Usar query parameters para filtros.
+
+✔ URI correcta:
+GET /libros?genero=ciencia-ficcion
+-->
+
+<!-- ====================================================== -->
+<!-- RESUMEN GENERAL -->
+<!-- ====================================================== -->
+
+<!--
+Buenas prácticas REST recordadas en esta actividad:
+
+✔ Usar sustantivos, no verbos, en las URIs
+✔ Usar plural para colecciones
+✔ Dejar la acción al método HTTP
+✔ Usar IDs en la ruta, no en query params
+✔ Usar query params para filtros y ordenamientos
+-->

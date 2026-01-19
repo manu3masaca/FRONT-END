@@ -1,0 +1,52 @@
+EXPLICACIÓN – ESTRUCTURA DEL PROYECTO Y REACTDOM
+
+
+PARTE 1: El <div id="root"></div>
+
+En el archivo public/index.html se encuentra la siguiente línea:
+
+<div id="root"></div>
+
+¿Qué hace ese <div>?
+Ese div funciona como el contenedor principal de la aplicación React.
+Está vacío en el HTML, pero React utiliza ese espacio para mostrar todos
+los componentes de la aplicación.
+
+¿Por qué es importante para React?
+Es importante porque React no modifica todo el HTML, solo controla lo que
+está dentro de ese div. A partir de ahí, React maneja el contenido de forma
+dinámica sin recargar la página.
+
+¿Qué pasa si lo eliminás o cambiás su id?
+Si se elimina el div, la aplicación no se renderiza y aparece un error.
+Si se cambia el id (por ejemplo de "root" a otro nombre), React no podrá
+encontrar el elemento donde debe montarse y la app no se mostrará.
+
+¿Dónde en el proyecto se usa ese id?
+El id "root" se usa en el archivo src/index.js, donde React lo busca para
+renderizar la aplicación.
+
+
+PARTE 2: El archivo src/index.js
+
+¿Qué hace ReactDOM.createRoot()?
+ReactDOM.createRoot() busca el elemento HTML con id "root" y crea un punto
+de entrada donde React va a renderizar la aplicación. Este método pertenece
+a React 18 y permite un renderizado más eficiente.
+
+¿Qué significa root.render(<App />)?
+La instrucción root.render(<App />) le indica a React que debe mostrar el
+componente App dentro del div con id "root". Desde App se renderizan todos
+los demás componentes de la aplicación.
+
+¿Qué pasa si cambiás el componente que se renderiza por otro?
+Si se cambia <App /> por otro componente, React mostrará directamente ese
+componente en pantalla y App dejará de renderizarse. Esto demuestra que
+index.js define cuál es el componente principal de inicio de la aplicación.
+
+
+CONCLUSIÓN
+El div con id "root" conecta el HTML con React.
+El archivo index.js es el punto donde React se monta en el DOM.
+El componente App es el principal por convención, pero puede cambiarse.
+React controla todo el contenido que se renderiza dentro del root.

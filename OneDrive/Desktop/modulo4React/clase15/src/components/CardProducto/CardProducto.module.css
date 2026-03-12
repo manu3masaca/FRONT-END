@@ -1,0 +1,28 @@
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.imagen {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.boton {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.agregado {
+  background-color: #2ecc71;
+}
+
+.noAgregado {
+  background-color: #e67e22;
+}

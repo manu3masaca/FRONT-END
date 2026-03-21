@@ -1,0 +1,19 @@
+.post {
+  border: 1px solid white;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.azul {
+  color: lightblue;
+}
+
+.verde {
+  color: lightgreen;
+}
+
+.mensaje {
+  color: lightgreen;
+  font-weight: bold;
+}
